@@ -33,7 +33,7 @@
 		                 <a href="registro.php">Registro</a>
 		             </li>
 							<li>
-								<a href="#">Login</a>
+								<a href="login.php">Login</a>
 							</li>
 		         </ul>
 		    </div>
@@ -65,7 +65,7 @@
 				<?php
 
 		   		$ch = curl_init();
-		   		curl_setopt($ch, CURLOPT_URL, 'http://192.168.6.169:8080/api/preguntas/fol/:cantidad');
+		   		curl_setopt($ch, CURLOPT_URL, 'http://192.168.6.169:8080/api/preguntas/fol/');
 		   		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		   		curl_setopt($ch, CURLOPT_HEADER, 0);
 		   		$data = curl_exec($ch);
@@ -102,7 +102,6 @@
 						ths[i].hidden = true
 					}
 					$('#tablaCastellano').css("width", "30%");
-
 				}
 
 				function preguntasRespuestas() {
@@ -120,8 +119,6 @@
 					alert(optionText);
 
 				}
-
-
 
 			</script>
 	</div>

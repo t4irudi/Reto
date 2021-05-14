@@ -33,4 +33,53 @@ function conectarBBDD()
       $mysqli->close();
       return $resultado;
     }
+
+    function login($user, $password)
+    {
+      $mysqli = conectarBBDD();
+      $sql = "SELECT * FROM users WHERE user = ? AND pwd = ?";
+
+      $sentencia = $mysqli->prepare($sql);
+      if(!$sentencia)
+      {
+        echo "Fallo al preparar la sentencia";
+      }
+
+      $asignar = $sentencia->bind_param("ss", $user, $password);
+      if(!$asignar)
+      {
+        echo "Fallo en la asignación de parámetros";
+      }
+
+      $ejecucion = $sentencia->execute();
+      if(!$ejecucion)
+      {
+        echo "Fallo al ejecutar";
+      }
+
+      $id = -1;
+      $usuario = "";
+      $password = "";
+      $nombre = "";
+      $vincular = $sentencia->bind_result($id, $usuario, $password, $nombre);
+      if(!$vincular)
+      {
+        echo "Fallo al vincular";
+      }
+
+      $usuarioResultado = array();
+
+      if($sentencia->fetch())
+      {
+        $usuarioResultado = array(
+          'id' => $id,
+          'usuario' => $usuario,
+          'password' => $password,
+          'nombre' => $nombre
+        );
+      }
+
+      $mysqli->close();
+      return $usuarioResultado;
+    }
 ?>

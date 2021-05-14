@@ -204,6 +204,7 @@ table.blueTable thead
 table.blueTable tbody tr td
 {
   text-align: center;
+  border: 1px solid black;
 }
 
 table.blueTable thead tr
@@ -213,14 +214,15 @@ table.blueTable thead tr
   text-align: center;
 }
 
+table.blueTable tbody tr
+{
+  text-align: center;
+
+  min-height: 30px;
+}
+
 table.blueTable tbody tr:hover
 {
   background-color: #787777;
   text-align: center;
-}
-table.blueTable tbody tr
-{
-  background-color: #787777;
-  text-align: center;
-  min-height: 30px;
 }
