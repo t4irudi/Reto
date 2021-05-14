@@ -129,7 +129,7 @@ db.auth('almi', 'Almi123');
 //CONECTARSE A LA BASE DE DATOS JUEGALMI
 db = db.getSiblingDB('t4irudi');
 //BORRAR TABLAS PREVIAS ANTES DE INSERTAR
-//db.preguntas.remove({});
+db.preguntas.remove({});
 //INSERTAR LOS JUEGOS DEL ARRAY QUE HEMOS HECHO ARRIBA
 db.preguntas.insert(preguntas);
 //MUESTRA LOS DATOS
