@@ -1,0 +1,227 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: #a6a6a6;
+    height: 100%;
+}
+
+div#cabeza
+{
+  height: 20%;
+  width: 100%;
+  background-color: black;
+}
+
+h1#titulo
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 80;
+  font-weight: bolder;
+  color: #46b1c2;
+  padding: 20px;
+  width: 97%;
+  text-decoration: overline;
+  position: relative;
+  text-align: center;
+}
+
+h1#titulo a
+{
+  text-decoration: none;
+  color: #46b1c2;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    top: -24px;
+    width: 100%;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+
+}
+
+#menu li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+#menu .active {
+    background-color: grey;
+
+}
+
+#menu li ul li {
+    display: none;
+    position: absolute;
+    position: fixed;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#menu li:hover ul li {
+    display: block;
+}
+
+#menu li ul li a {
+    width: 110px;
+}
+
+#menu li ul li:nth-child(2) {
+    margin-top: 46px;
+}
+
+#menu li ul li:nth-child(3) {
+    margin-top: 92px;
+}
+
+#menu li ul li:nth-child(4) {
+    margin-top: 138px;
+}
+
+#menu2 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: absolute;
+    width: 161px;
+    top: 109px;
+    left: 1262px;
+}
+
+#menu2 ul {
+    list-style-type: none;
+}
+
+#menu2 li {
+    float: left;
+}
+
+#menu2 li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+
+}
+
+#menu2 li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+#menu2 .active {
+    background-color: grey;
+
+}
+
+#menu2 li ul li {
+    display: none;
+    position: absolute;
+    position: fixed;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#menu2 li:hover ul li {
+    display: block;
+}
+
+#menu2 li ul li a {
+    width: 110px;
+}
+
+#menu2 li ul li:nth-child(2) {
+    margin-top: 46px;
+}
+
+#menu2 li ul li:nth-child(3) {
+    margin-top: 92px;
+}
+
+#menu2 li ul li:nth-child(4) {
+    margin-top: 138px;
+}
+
+div#pie
+{
+  position: relative;
+  height: 15%;
+  background-color: black;
+}
+
+div#pie p#Copyright
+{
+  position: relative;
+  padding: 10px;
+  color: white;
+}
+
+table.blueTable
+{
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #949494;
+  text-align: center;
+}
+
+table.blueTable thead
+{
+  border-bottom: 5px solid black;
+  text-align: center;
+}
+
+table.blueTable tbody tr td
+{
+  text-align: center;
+}
+
+table.blueTable thead tr
+{
+  font-weight: bolder;
+  font-size: 40;
+  text-align: center;
+}
+
+table.blueTable tbody tr:hover
+{
+  background-color: #787777;
+  text-align: center;
+  min-height: 35px;
+}
+table.blueTable tbody tr
+{
+  background-color: #787777;
+  text-align: center;
+  min-height: 30px;
+}
