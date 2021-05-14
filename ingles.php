@@ -30,11 +30,11 @@
 				<div id="menu2">
 		         <ul>
 		             <li>
-		                 <a href="#">Registro</a>
+		             		<a href="registro.php">Registro</a>
 		             </li>
-							<li>
-								<a href="#">Login</a>
-							</li>
+								 <li>
+									 	<a href="#">Login</a>
+								</li>
 		         </ul>
 		    </div>
 	</div>

@@ -4,14 +4,14 @@ function conectarBBDD()
 {
     //Abrir una conexión
 
-    $mysqli = new mysqli("192.168.6.169", "almi", "Almi123", "t4irudi");
+    $mysqli = new mysqli("192.168.6.169:3306", "almi", "Almi123", "t4irudi");
     if ($mysqli->connect_errno) {
         echo "Fallo en la conexión: " . $mysqli->connect_errno;
     }
 
     return $mysqli;
 }
-    
+
     function insertarUsuario($user, $password, $nombre, $apellido)
     {
       $mysqli = conectarBBDD();
@@ -23,7 +23,7 @@ function conectarBBDD()
         echo "Fallo al preparar la insert";
       }
 
-      $bind = $sentencia->bind_param("sss", $user, $password, $nombre, $apellido);
+      $bind = $sentencia->bind_param("ssss", $user, $password, $nombre, $apellido);
       if(!$bind)
       {
         echo "Error al asociar parámetros";
@@ -33,4 +33,4 @@ function conectarBBDD()
       $mysqli->close();
       return $resultado;
     }
-    
+?>

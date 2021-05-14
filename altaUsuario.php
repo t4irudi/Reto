@@ -6,5 +6,5 @@
 
   include "datos.php";
   $resultado = insertarUsuario($user, $password, $nombre, $apellido);
-  header("location: index2.php");
+  header("location: index.php");
  ?>
