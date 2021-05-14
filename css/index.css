@@ -217,7 +217,6 @@ table.blueTable tbody tr:hover
 {
   background-color: #787777;
   text-align: center;
-  min-height: 35px;
 }
 table.blueTable tbody tr
 {

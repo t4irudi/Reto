@@ -73,8 +73,7 @@
 			 		$data = json_decode($data, true);
 
 					$count = count($data);
-					$a = $_POST['cantidad'];
-					var_dump($a);
+
 
 					for ($i=0; $i < $count; $i++) {
 
@@ -118,7 +117,7 @@
 				function generateData() {
 					var optionText = document.getElementById("cantidad").value;
 
-					//alert(optionText);
+					alert(optionText);
 
 				}
 
