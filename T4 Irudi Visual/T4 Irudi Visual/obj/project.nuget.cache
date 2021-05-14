@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mHTOcrTdf0QR7pPHyoNrEA+lpGZtP9GGX0xB5RfrE+clK54qeg+d/DEmmtFkIKgGUe80XGh3wsPV8W/pm2hxvA==",
+  "dgSpecHash": "ZfqXUK8tfGOlRrTTZI67Bn17BdzuljgTzYwDAcStB7vV3HQ4cUB/uiqIUpaHZY3F3KghOhjia810PvZ1sCYdEQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dam1-jonpu\\Desktop\\Reto 5\\Visual\\Proyecto\\T4 Irudi Visual\\T4 Irudi Visual\\T4 Irudi Visual.vbproj",
+  "projectFilePath": "C:\\Users\\dam1-jonpu\\Desktop\\Reto 5\\git\\Reto\\T4 Irudi Visual\\T4 Irudi Visual\\T4 Irudi Visual.vbproj",
   "expectedPackageFiles": [
     "C:\\Users\\dam1-jonpu\\.nuget\\packages\\bouncycastle.netcore\\1.8.5\\bouncycastle.netcore.1.8.5.nupkg.sha512",
     "C:\\Users\\dam1-jonpu\\.nuget\\packages\\dnsclient\\1.4.0\\dnsclient.1.4.0.nupkg.sha512",
