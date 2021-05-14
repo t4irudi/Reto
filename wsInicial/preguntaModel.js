@@ -2,20 +2,20 @@ var mongoose = require('mongoose');
 
 //Setup Schema
 var preguntaSchema = mongoose.Schema({
-    languaje: String,
-    question: String,
+    idioma: String,
+    pregunta: String,
     a: String,
     b: String,
     c: String,
     d: String,
-    answer: String,
-    explanation: String,
-    category: String
+    respuesta: String,
+    explicacion: String,
+    categoria: String
 }, {
     collection: 'preguntas'
 });
 
-var Pregunta = module.exports = mongoose.model('preguntas', preguntaSchema);
+var Pregunta = module.exports = mongoose.model('pregunta', preguntaSchema);
 
 module.exports.getFol = function(callback) {
     Pregunta.find({ categoria: 'fol' }, callback);

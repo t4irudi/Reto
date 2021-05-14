@@ -50,6 +50,7 @@ exports.newPregunta = function(req, res) {
     preg.respuesta = req.body.respuesta;
     preg.explicacion = req.body.explicacion;
     preg.categoria = req.body.categoria;
+    console.log("post?");
     preg.save(function(err) {
         if (err) {
             res.json({
