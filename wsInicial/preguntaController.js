@@ -79,3 +79,18 @@ exports.updateOne = function(req, res) {
         }
     }, id, q);
 };
+exports.getLimit = function(req, res) {
+    var limit = req.body.limit;
+    var skip = req.body.skip;
+    console.log(limit, skip);
+    /*Pregunta.getLimit(function(err, preguntas) {
+        if (err) {
+            res.json({
+                status: ":(",
+                message: err
+            });
+        } else {
+            res.json(preguntas);
+        }
+    });*/
+}

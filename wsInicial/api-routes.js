@@ -22,7 +22,10 @@ router.route('/preguntas/english').get(preguntaController.getIngles);
 router.route('/preguntas').get(preguntaController.getTodas).post(preguntaController.newPregunta);
 
 //Ruta para preguntas con id especifica
-router.route('/pregunta/:id').put(preguntaController.updateOne);
+router.route('/preguntas/:id').put(preguntaController.updateOne);
+
+//Ruta para los limits del loren
+router.route('/preguntas/limit').get(preguntaController.getLimit);
 
 //Export API routes
 module.exports = router;

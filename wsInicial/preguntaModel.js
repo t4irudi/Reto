@@ -39,3 +39,8 @@ module.exports.updateOne = function(callback, id, pregunta) {
 module.exports.updateFilm = function(callback, id, film) {
     Film.updateOne({ '_id': id, tipo: 'pelicula' }, film, callback);
 };
+
+module.exports.getLimit = function(callback, limit, skip) {
+    Pregunta.find(callback).limit(limit).skip(skip);
+    console.log('get limit');
+};
