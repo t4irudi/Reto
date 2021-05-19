@@ -34,13 +34,14 @@ module.exports.getAll = function(callback) {
 
 module.exports.updateOne = function(callback, id, pregunta) {
     Pregunta.findOneAndUpdate({ '_id': id }, pregunta, callback);
-};
-
-module.exports.updateFilm = function(callback, id, film) {
-    Film.updateOne({ '_id': id, tipo: 'pelicula' }, film, callback);
+    console.log('updateOne');
 };
 
 module.exports.getLimit = function(callback, limit, skip) {
-    Pregunta.find(callback).limit(limit).skip(skip);
+    Pregunta.find({ categoria: 'fol' }, callback).skip(skip).limit(limit);
     console.log('get limit');
+};
+
+module.exports.deletePregunta = function(callback, id) {
+    Pregunta.deleteOne({ '_id': id }, callback);
 };

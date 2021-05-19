@@ -83,7 +83,8 @@ exports.getLimit = function(req, res) {
     var limit = req.body.limit;
     var skip = req.body.skip;
     console.log(limit, skip);
-    /*Pregunta.getLimit(function(err, preguntas) {
+
+    Pregunta.getLimit(function(err, preguntas) {
         if (err) {
             res.json({
                 status: ":(",
@@ -92,5 +93,22 @@ exports.getLimit = function(req, res) {
         } else {
             res.json(preguntas);
         }
-    });*/
-}
+    }, limit, skip);
+};
+
+exports.deleteOne = function(req, res) {
+    var id = req.params.id;
+    Pregunta.deletePregunta(function(err, pregunta) {
+        if (err) {
+            res.json({
+                status: ":(",
+                message: err
+            });
+        } else {
+            res.json({
+                status: ":)",
+                data: pregunta.deletedCount + " deleted"
+            });
+        }
+    }, id);
+};
