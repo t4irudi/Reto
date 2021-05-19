@@ -1,6 +1,5 @@
 //CREAR UN ARRAY VACIO Y METER PREGUNTAS EN EL
 var preguntas = [{
-        "idioma": "esp",
         "pregunta": "Los accidentes en itinere son...",
         "a": "Los que sufre un trabajador al ir o volver del trabajo",
         "b": "No es accidente desde el punto de vista legal",
@@ -11,7 +10,6 @@ var preguntas = [{
         "categoria": "fol"
     },
     {
-        "idioma": "esp",
         "pregunta": "Señale cual de las siguientes afirmaciones no es correcta:",
         "a": "La Ley de Prevención no es de aplicación en el ámbito de la Policía, seguridad y resguardo aduanero.",
         "b": "El principal derecho que poseen los trabajadores en materia de prevención es una protección eficaz en materia de seguridad y salud en el trabajo.",
@@ -22,7 +20,6 @@ var preguntas = [{
         "categoria": "fol"
     },
     {
-        "idioma": "esp",
         "pregunta": "Señale la respuesta correcta:",
         "a": "El ruido es un agente químico cuya vía principal de entrada en el organismo es la inhalatoria o por respiración. ",
         "b": "Para evitar el riesgo por contacto eléctrico solo se puede utilizar equipos de protección individual.",
@@ -33,7 +30,6 @@ var preguntas = [{
         "categoria": "fol"
     },
     {
-        "idioma": "eng",
         "pregunta": "Why is the sky blue?",
         "a": "Because roses are red.",
         "b": "Light refraction",
@@ -44,7 +40,6 @@ var preguntas = [{
         "categoria": "ingles"
     },
     {
-        "idioma": "test",
         "pregunta": "testP",
         "a": "testA",
         "b": "testB",
@@ -55,7 +50,6 @@ var preguntas = [{
         "categoria": "test"
     },
     {
-        "idioma": "esp",
         "pregunta": "¿Qué son las tetanizaciones?",
         "a": "Es el movimiento anárquico del corazón que impide el envío eficaz de sangre por todo el organismo.",
         "b": "Son los movimientos o contracturas incontroladas de algunos músculos al paso de la corriente.",
@@ -66,7 +60,6 @@ var preguntas = [{
         "categoria": "fol"
     },
     {
-        "idioma": "esp",
         "pregunta": "¿Cuáles son los principales peligros para un quemado?",
         "a": "La hipotermia.",
         "b": "La infección bacteriana.",
@@ -77,7 +70,6 @@ var preguntas = [{
         "categoria": "fol"
     },
     {
-        "idioma": "esp",
         "pregunta": "¿Por debajo de qué temperatura se produce parada cardiorrespiratoria?",
         "a": "28 grados.",
         "b": "34 grados.",
@@ -88,7 +80,6 @@ var preguntas = [{
         "categoria": "fol"
     },
     {
-        "idioma": "esp",
         "pregunta": "Cuando se produce necrosis por frío, estamos hablando de:",
         "a": "Congelaciones de primer grado.",
         "b": "Congelaciones de segundo grado.",
@@ -99,7 +90,6 @@ var preguntas = [{
         "categoria": "fol"
     },
     {
-        "idioma": "esp",
         "pregunta": "Ante un cuerpo extraño en el oído con sangrado interno debemos:",
         "a": "Taponar la salida de sangre o líquido.",
         "b": "No taponar la salida de sangre o líquido.",
@@ -110,7 +100,6 @@ var preguntas = [{
         "categoria": "fol"
     },
     {
-        "idioma": "esp",
         "pregunta": "¿Qué posición es adecuada para pacientes hipotensos?",
         "a": "Semisentado.",
         "b": "Posición de Trendelemburg.",
@@ -136,17 +125,7 @@ db.preguntas.insert(preguntas);
 db.preguntas.find().pretty();
 
 /*
-{
-  "idioma": "",
-  "pregunta": "",
-  "a": "",
-  "b": "",
-  "c": "",
-  "d": "",
-  "respuesta": "",
-  "explicacion": "",
-  "categoria": ""
-}
+
 
 "Distintas categorias":
 "fol",
