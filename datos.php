@@ -61,7 +61,8 @@ function conectarBBDD()
       $usuario = "";
       $password = "";
       $nombre = "";
-      $vincular = $sentencia->bind_result($id, $usuario, $password, $nombre);
+      $apellido = "";
+      $vincular = $sentencia->bind_result($id, $usuario, $password, $nombre, $apellido);
       if(!$vincular)
       {
         echo "Fallo al vincular";
@@ -72,14 +73,36 @@ function conectarBBDD()
       if($sentencia->fetch())
       {
         $usuarioResultado = array(
-          'id' => $id,
-          'usuario' => $usuario,
-          'password' => $password,
-          'nombre' => $nombre
+          'id_user' => $id,
+          'user' => $usuario,
+          'pwd' => $password,
+          'nombre' => $nombre,
+          'apellido' => $apellido
         );
       }
-
       $mysqli->close();
       return $usuarioResultado;
+    }
+
+    function borrarUsuario($user)
+    {
+      $mysqli = conectarBBDD();
+
+      $sql = "DELETE FROM users, partida WHERE id_user = ?";
+      $sentencia = $mysqli->prepare($sql);
+      if(!$sentencia)
+      {
+        echo "Fallo al preparar la delete" ;
+      }
+
+      $bind = $sentencia->bind_param("s", $user);
+      if(!$bind)
+      {
+        echo "Error al asociar parámetros";
+      }
+      $resultado = $sentencia->execute();
+      var_dump($mysqli);
+      $mysqli->close();
+      return $resultado;
     }
 ?>

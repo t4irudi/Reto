@@ -8,7 +8,7 @@
   }else {
 
     session_start();
-    $_SESSION['user'] = $user['usuario'];
-    header("location: castellano2.php");
+    $_SESSION['user'] = $user;
+    header("location: index2.php");
   }
 ?>

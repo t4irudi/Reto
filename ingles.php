@@ -45,6 +45,7 @@
 		<table id="tablaIngles" class="blueTable">
 			<thead>
 				<tr>
+					<th class="numberFila"></th>
 					<th class="thPregunta">Question </th>
 					<th class="th">1st answer </th>
 					<th class="th">2nd answer </th>
@@ -68,8 +69,9 @@
 					$count = count($data);
 
 					for ($i=0; $i < $count; $i++) {
-
+						$numcolumna = $i+1;
 						echo "<tr>";
+							echo "<td class='tdNumFila'>". $numcolumna . ".-</td>";
 							echo "<td class='tdPregunta'>". $data[$i]['pregunta'] . "</td>";
 							echo "<td class='td'>". $data[$i]['a'] . "</td>";
 							echo "<td class='td'>". $data[$i]['b'] . "</td>";
@@ -111,7 +113,7 @@
 	<div id="pie">
 		<p id="Copyright">Copyright 1999-2021 by t4Irudi Data. All Rights Reserved. T4 is powered by la planta santa</p>
 	</div>
-
+<script src="js/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

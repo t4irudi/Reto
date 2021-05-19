@@ -56,7 +56,7 @@
 <div id="pie">
   <p id="Copyright">Copyright 1999-2021 by t4Irudi Data. All Rights Reserved. T4 is powered by la planta santa</p>
 </div>
-
+<script src="js/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

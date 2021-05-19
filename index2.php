@@ -8,11 +8,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
-
+<?php
+  session_start();
+  if (isset( $_SESSION["user"]) == false) {
+    // code...
+    header("location: login.php");
+  }
+  include("datos.php");
+?>
 <body>
 
 	<div id="cabeza">
-		<h1 id="titulo"><a href="index.php">T4-Irudi™</a></h1>
+		<h1 id="titulo"><a href="#">T4-Irudi™</a></h1>
 		<div id="menu">
             <ul>
                 <li class="active">
@@ -26,48 +33,22 @@
 								</li>
             </ul>
         </div>
-				<div id="menu2">
+				<div id="menu3">
 		         <ul>
-		             <li>
-		                 <a href="registro.php">Registro</a>
-		             </li>
+								 <li>
+ 									<a href="modificarUsuario.php">Modificar</a>
+ 								</li>
+								<li>
+										<a href="borrarUsuario.php">Borrar Usuario</a>
+								</li>
 							<li>
-								<a href="login.php">Login</a>
+								<a href="logOut.php">Cerrar Sesion</a>
 							</li>
 		         </ul>
 		    </div>
 	</div>
 
 	<div id="cuerpo">
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
 
 	</div>
 

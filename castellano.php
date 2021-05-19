@@ -40,19 +40,39 @@
 	</div>
 
 	<div id="cuerpo">
-		<button class="botonPreguntas" onclick='soloPreguntas()'>Preguntas</button>
+		<?php
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, 'http://192.168.6.169:8080/api/preguntas/fol/');
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_HEADER, 0);
+		$data = curl_exec($ch);
+		curl_close($ch);
+		$data = json_decode($data, true);
+
+		$count = count($data);
+		?>
+		<button class="botonPreguntas" onclick='soloPreguntas()' >Preguntas</button>
 		<button class="botonPreguntasRespuestas" onclick="preguntasRespuestas()">Preguntas + Respuestas</button>
 		<label for="cantidad">Selecciona la cantidad de preguntas que quieres cargar: </label>
-		<select onchange="generateData()" name="cantidad" id="cantidad">
-  		<option value="t" selected>Selecciona...</option>
+
+		<select onchange="generateData()" name="cantidade" id="cantidade">
+  		<option value="0" selected>Selecciona...</option>
   		<option value="10">10</option>
   		<option value="20">20</option>
   		<option value="30">30</option>
 		</select>
+		<?php
+		$selectOption = $_POST['cantidade'];
+
+		var_dump($selectOption);
+		echo "<input type='number' id='tentacles' name='tentacles' min='1' max=". $count  .">";?>
+
+
 
 		<table id="tablaCastellano" class="blueTable">
 			<thead>
 				<tr>
+					<th class="numberFila"></th>
 					<th class="thPregunta">Pregunta </th>
 					<th class="th">Primera respuesta </th>
 					<th class="th">Segunda respuesta </th>
@@ -63,21 +83,10 @@
 			<tbody>
 
 				<?php
-
-		   		$ch = curl_init();
-		   		curl_setopt($ch, CURLOPT_URL, 'http://192.168.6.169:8080/api/preguntas/fol/');
-		   		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-		   		curl_setopt($ch, CURLOPT_HEADER, 0);
-		   		$data = curl_exec($ch);
-					curl_close($ch);
-			 		$data = json_decode($data, true);
-
-					$count = count($data);
-
-
 					for ($i=0; $i < $count; $i++) {
-
+						$numcolumna = $i+1;
 						echo "<tr>";
+							echo "<td class='tdNumFila'>". $numcolumna . "</td>";
 							echo "<td class='tdPregunta'>". $data[$i]['pregunta'] . "</td>";
 							echo "<td class='td'>". $data[$i]['a'] . "</td>";
 							echo "<td class='td'>". $data[$i]['b'] . "</td>";
@@ -126,6 +135,7 @@
 	<div id="pie">
 		<p id="Copyright">Copyright 1999-2021 by t4Irudi Data. All Rights Reserved. T4 is powered by la planta santa</p>
 	</div>
+	<script src="js/jquery-3.6.0.min.js"></script>
 
 </body>
 

@@ -22,19 +22,28 @@ h1#titulo
 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 80;
-  font-weight: bolder;
+  font-weight: bold;
   color: #46b1c2;
   padding: 20px;
   width: 97%;
   text-decoration: overline;
   position: relative;
   text-align: center;
+
 }
 
 h1#titulo a
 {
   text-decoration: none;
-  color: #46b1c2;
+  color: #3f98a6;
+  opacity: 0,5;
+  transition: 1s;
+}
+
+h1#titulo a:hover
+{
+  color: #00fffa;
+  opacity: 1;
 }
 
 #menu {
@@ -104,13 +113,11 @@ h1#titulo a
 }
 
 #menu2 {
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     position: absolute;
     width: 161px;
     top: 109px;
-    left: 1262px;
+    left: 88.7%;
 }
 
 #menu2 ul {
@@ -166,6 +173,70 @@ h1#titulo a
 }
 
 #menu2 li ul li:nth-child(4) {
+    margin-top: 138px;
+}
+
+#menu3 {
+    overflow: hidden;
+    position: absolute;
+    width: 350px;
+    top: 109px;
+    left: 75.7%;
+}
+
+#menu3 ul {
+    list-style-type: none;
+}
+
+#menu3 li {
+    float: left;
+}
+
+#menu3 li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+
+}
+
+#menu3 li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+#menu3 .active {
+    background-color: grey;
+
+}
+
+#menu3 li ul li {
+    display: none;
+    position: absolute;
+    position: fixed;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#menu3 li:hover ul li {
+    display: block;
+}
+
+#menu3 li ul li a {
+    width: 110px;
+}
+
+#menu3 li ul li:nth-child(2) {
+    margin-top: 46px;
+}
+
+#menu3 li ul li:nth-child(3) {
+    margin-top: 92px;
+}
+
+#menu3 li ul li:nth-child(4) {
     margin-top: 138px;
 }
 
