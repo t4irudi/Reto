@@ -29,7 +29,7 @@ router.route('/preguntas/:id').put(preguntaController.updateOne).delete(pregunta
 router.route('/preguntas/limit').get(preguntaController.getLimit);
 
 //Ruta para loguearse
-router.route('/login').post(autorController.loginData);
+router.route('/login').post(autorController.login);
 
 //Export API routes
 module.exports = router;
