@@ -7,7 +7,9 @@ var preguntas = [{
         "d": "Todas son correctas",
         "respuesta": "a",
         "explicacion": "De acuerdo con la definición legal de Accidente de Trabajo considera también accidentes de trabajo los accidente in itínere que son los que sufre el trabajador al ir al trabajo o al volver de este.",
-        "categoria": "fol"
+        "categoria": "fol",
+        "id_autor": 1,
+        "modificaciones": []
     },
     {
         "pregunta": "Señale cual de las siguientes afirmaciones no es correcta:",
@@ -17,7 +19,9 @@ var preguntas = [{
         "d": "Todas son incorrectas",
         "respuesta": "c",
         "explicacion": "La Ley de Prevención obliga a todos los trabajadores a velar por su propia seguridad y salud en el trabajo y también por la de sus compañeros, mediante el cumplimiento de las medidas de prevención adoptadas.",
-        "categoria": "fol"
+        "categoria": "fol",
+        "id_autor": 2,
+        "modificaciones": []
     },
     {
         "pregunta": "Señale la respuesta correcta:",
@@ -27,7 +31,9 @@ var preguntas = [{
         "d": "Todas son correctas",
         "respuesta": "c",
         "explicacion": "La carga de trabajo Se define como el conjunto de requerimientos psicofísicos a los que se ve sometida la persona a lo largo de la jornada laboral. Cuando el trabajo es muscular se habla de carga física; si, por el contrario, supone un mayor esfuerzo intelectual, se habla de carga mental.",
-        "categoria": "fol"
+        "categoria": "fol",
+        "id_autor": 3,
+        "modificaciones": []
     },
     {
         "pregunta": "Why is the sky blue?",
@@ -37,7 +43,9 @@ var preguntas = [{
         "d": "Our lord and saviour Gabe Newell",
         "respuesta": "b",
         "explicacion": "Light refracts in the atmosphere.",
-        "categoria": "ingles"
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
     },
     {
         "pregunta": "testP",
@@ -47,7 +55,9 @@ var preguntas = [{
         "d": "testD",
         "respuesta": "testR",
         "explicacion": "testE",
-        "categoria": "test"
+        "categoria": "test",
+        "id_autor": 1,
+        "modificaciones": []
     },
     {
         "pregunta": "¿Qué son las tetanizaciones?",
@@ -57,7 +67,9 @@ var preguntas = [{
         "d": "Es la infección por tetanos",
         "respuesta": "b",
         "explicacion": "no lo se mann",
-        "categoria": "fol"
+        "categoria": "fol",
+        "id_autor": 2,
+        "modificaciones": []
     },
     {
         "pregunta": "¿Cuáles son los principales peligros para un quemado?",
@@ -67,7 +79,9 @@ var preguntas = [{
         "d": "Todas son incorrectas.",
         "respuesta": "c",
         "explicacion": "Mis disculpas buen señor pero no ha adquirido este DLC, puede adquirirlo aqui por tan solo 30,50€",
-        "categoria": "fol"
+        "categoria": "fol",
+        "id_autor": 3,
+        "modificaciones": []
     },
     {
         "pregunta": "¿Por debajo de qué temperatura se produce parada cardiorrespiratoria?",
@@ -77,7 +91,9 @@ var preguntas = [{
         "d": "24 grados.",
         "respuesta": "a",
         "explicacion": "Si",
-        "categoria": "fol"
+        "categoria": "fol",
+        "id_autor": 4,
+        "modificaciones": []
     },
     {
         "pregunta": "Cuando se produce necrosis por frío, estamos hablando de:",
@@ -87,7 +103,9 @@ var preguntas = [{
         "d": "Congelaciones de cuarto grado.",
         "respuesta": "c",
         "explicacion": "no la tengo",
-        "categoria": "fol"
+        "categoria": "fol",
+        "id_autor": 1,
+        "modificaciones": []
     },
     {
         "pregunta": "Ante un cuerpo extraño en el oído con sangrado interno debemos:",
@@ -97,7 +115,9 @@ var preguntas = [{
         "d": "Soplar en el oído.",
         "respuesta": "b",
         "explicacion": "alakuapark",
-        "categoria": "fol"
+        "categoria": "fol",
+        "id_autor": 2,
+        "modificaciones": []
     },
     {
         "pregunta": "¿Qué posición es adecuada para pacientes hipotensos?",
@@ -107,30 +127,36 @@ var preguntas = [{
         "d": "Posición anti-Trendelemburg.",
         "respuesta": "b",
         "explicacion": "kk",
-        "categoria": "fol"
+        "categoria": "fol",
+        "id_autor": 3,
+        "modificaciones": []
     }
 ];
 
 var autores = [
     {
+        "_id": 1,
         "user": "jonpu",
         "pwd": "Almi123",
         "nombre": "Jon",
         "apellidos": "Puriarte"
     },
     {
+        "_id": 2,
         "user": "david",
         "pwd": "Almi123",
         "nombre": "David",
         "apellidos": "Mardaras"
     },
     {
+        "_id": 3,
         "user": "lorenzo",
         "pwd": "Almi123",
         "nombre": "Mikel",
         "apellidos": "Looreenzo"
     },
     {
+        "_id": 4,
         "user": "jaime",
         "pwd": "Almi123",
         "nombre": "Jaime",
@@ -164,10 +190,20 @@ db.autores.find().pretty();
     "d": "",
     "respuesta": "",
     "explicacion": "",
-    "categoria": ""
+    "categoria": "",
+    "id_autor": ,
+    "modificaciones": [
+        {
+            "fecha": "",
+            "id_autor": "",
+            "justificacion": ""
+        }
+    ]
 }
 
 {
+    
+    "_id": ,
     "user": "",
     "pwd": "",
     "nombre": "",
