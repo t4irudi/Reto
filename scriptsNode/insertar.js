@@ -146,7 +146,7 @@ db.auth('almi', 'Almi123');
 db = db.getSiblingDB('t4irudi');
 //BORRAR TABLAS PREVIAS ANTES DE INSERTAR
 //db.preguntas.remove({});
-//db.autores.remove({});
+db.autores.remove({});
 //INSERTAR LOS JUEGOS DEL ARRAY QUE HEMOS HECHO ARRIBA
 db.preguntas.insert(preguntas);
 db.autores.insert(autores);
