@@ -111,6 +111,33 @@ var preguntas = [{
     }
 ];
 
+var autores = [
+    {
+        "user": "jonpu",
+        "pwd": "Almi123",
+        "nombre": "Jon",
+        "apellidos": "Puriarte"
+    },
+    {
+        "user": "david",
+        "pwd": "Almi123",
+        "nombre": "David",
+        "apellidos": "Mardaras"
+    },
+    {
+        "user": "lorenzo",
+        "pwd": "Almi123",
+        "nombre": "Mikel",
+        "apellidos": "Looreenzo"
+    },
+    {
+        "user": "jaime",
+        "pwd": "Almi123",
+        "nombre": "Jaime",
+        "apellidos": "Almi123"
+    }
+];
+
 //CONECTARSE A LA BASE DE DATOS
 db = connect("localhost:27017/admin");
 //CONECTARSE AL USUARIO DE MONGODB
@@ -119,13 +146,33 @@ db.auth('almi', 'Almi123');
 db = db.getSiblingDB('t4irudi');
 //BORRAR TABLAS PREVIAS ANTES DE INSERTAR
 //db.preguntas.remove({});
+//db.autores.remove({});
 //INSERTAR LOS JUEGOS DEL ARRAY QUE HEMOS HECHO ARRIBA
 db.preguntas.insert(preguntas);
+db.autores.insert(autores);
 //MUESTRA LOS DATOS
 db.preguntas.find().pretty();
+db.autores.find().pretty();
 
 /*
 
+{
+    "pregunta": "",
+    "a": "",
+    "b": "",
+    "c": "",
+    "d": "",
+    "respuesta": "",
+    "explicacion": "",
+    "categoria": ""
+}
+
+{
+    "user": "",
+    "pwd": "",
+    "nombre": "",
+    "apellidos": ""
+}
 
 "Distintas categorias":
 "fol",
