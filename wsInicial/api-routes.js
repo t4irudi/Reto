@@ -13,6 +13,7 @@ router.get('/', function(req, res) {
 
 //Inicializamos preguntaController
 var preguntaController = require('./preguntaController');
+var autorController = require('./autorController');
 
 //Ruta para preguntas de una categoria individial
 router.route('/preguntas/fol').get(preguntaController.getFol);
@@ -26,6 +27,9 @@ router.route('/preguntas/:id').put(preguntaController.updateOne).delete(pregunta
 
 //Ruta para los limits del loren
 router.route('/preguntas/limit').get(preguntaController.getLimit);
+
+//Ruta para loguearse
+router.route('/login').post(autorController.loginData);
 
 //Export API routes
 module.exports = router;
