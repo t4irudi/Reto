@@ -1,4 +1,5 @@
 Pregunta = require('./preguntaModel');
+Autor = require('./autorModel');
 
 exports.getFol = function(req, res) {
     Pregunta.getFol(function(err, preguntas) {
@@ -40,7 +41,7 @@ exports.getTodas = function(req, res) {
 };
 exports.newPregunta = function(req, res) {
     var preg = new Pregunta();
-    preg.idioma = req.body.idioma;
+    var aut = new Autor();
     preg.idioma = req.body.idioma;
     preg.pregunta = req.body.pregunta;
     preg.a = req.body.a;
@@ -50,6 +51,7 @@ exports.newPregunta = function(req, res) {
     preg.respuesta = req.body.respuesta;
     preg.explicacion = req.body.explicacion;
     preg.categoria = req.body.categoria;
+    preg.autor = req.body.autor;
     console.log("post?");
     preg.save(function(err) {
         if (err) {

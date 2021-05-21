@@ -133,8 +133,7 @@ var preguntas = [{
     }
 ];
 
-var autores = [
-    {
+var autores = [{
         "_id": 1,
         "user": "jonpu",
         "pwd": "Almi123",
@@ -161,6 +160,13 @@ var autores = [
         "pwd": "Almi123",
         "nombre": "Jaime",
         "apellidos": "Almi123"
+    },
+    {
+        "_id": 5,
+        "user": "a",
+        "pwd": "a",
+        "nombre": "mongoa",
+        "apellidos": "a(mongo)a"
     }
 ];
 
