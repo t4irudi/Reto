@@ -9,6 +9,7 @@
   <?php
     include("datos.php");
    ?>
+	 <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -41,22 +42,45 @@
 	</div>
 
 	<div id="cuerpo">
+
 <form id="formulario" action="loginUsuario.php" method="post">
     <div id="infoWeb">
-        <h2>Información para la web</h2>
+        <h2>Usuarios</h2>
         <label for="user">Usuario</label>
-        <input type="text" id="user" name="user" placeholder="Escriba su usuario" /><br>
+        <input class="css" type="text" id="user" name="user" placeholder="Escriba su usuario" /><br>
         <label for="password">Contraseña</label>
-        <input type="password" id="password" name="password" placeholder="Escriba su contraseña" /><br>
+        <input class="css" type="password" id="password" name="password" placeholder="Escriba su contraseña" /><br>
     </div>
-    <input id="enviar" type="submit" value="Enviar" />
+    <input class="css2" id="enviar" type="submit" value="Enviar" />
 </form>
+<form id="formulario2" action="loginUsuarioMongo.php" method="post">
+    <div id="infoWeb">
+        <h2>Autores</h2>
+        <label for="user2">Usuario</label>
+        <input class="css" type="text" id="user2" name="user2" placeholder="Escriba su usuario" /><br>
+        <label for="password2">Contraseña</label>
+        <input class="css" type="password" id="password2" name="password2" placeholder="Escriba su contraseña" /><br>
+    </div>
+    <input class="css2" id="enviar" type="submit" value="Enviar" />
+</form>
+
+<button>Autores</button>
+<button style="display : none">Usuarios</button>
+
+<script>
+	$("button").click( function()
+				 {
+					 $("form").toggle("slow");
+					 $("button").toggle();
+				 }
+			);
+</script>
 </div>
 
 <div id="pie">
   <p id="Copyright">Copyright 1999-2021 by t4Irudi Data. All Rights Reserved. T4 is powered by la planta santa</p>
 </div>
-<script src="js/jquery-3.6.0.min.js"></script>
+
 </body>
 
 </html>

@@ -41,7 +41,7 @@
 	</div>
 
 	<div id="cuerpo">
-		<form id="formulario" action="altaUsuario.php" method="post">
+		<form id="formularioRegistro" action="altaUsuario.php" method="post">
 		    <div id="infoWeb">
 		        <h2>Información para la web</h2>
 		        <label for="user">Usuario</label>

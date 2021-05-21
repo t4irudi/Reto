@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
+<script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -97,7 +97,7 @@
 				?>
 				</tbody>
 			</table>
-			<script src="jquery-3.6.0.min.js"></script>
+
 			<script>
 				var tds = document.getElementsByClassName('td');
 				var ths = document.getElementsByClassName('th');

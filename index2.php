@@ -38,9 +38,6 @@
 								 <li>
  									<a href="modificarUsuario.php">Modificar</a>
  								</li>
-								<li>
-										<a href="borrarUsuario.php">Borrar Usuario</a>
-								</li>
 							<li>
 								<a href="logOut.php">Cerrar Sesion</a>
 							</li>

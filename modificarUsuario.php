@@ -39,9 +39,6 @@
 										 <a href="#">Modificar</a>
 		             </li>
 								 <li>
-										 <a href="borrarUsuario.php">Borrar Usuario</a>
-		             </li>
-								 <li>
 									 <a href="logOut.php">Cerrar Sesion</a>
 								 </li>
 		         </ul>
@@ -72,6 +69,19 @@
  				?>
  				</tbody>
  			</table>
+			<button onclick="acceptWindow()">¡¡BORRAR USUARIO!!</button>
+			<script>
+			function acceptWindow() {
+
+	  		var r = confirm("Estas seguro de que deseas borrar el usuario?");
+	  		if (r == true) {
+					window.location.href = 'borrarUsuario.php';
+	  		}else{
+
+				}
+
+			}
+		</script>
 	</div>
 <tr>
 	<td></td>

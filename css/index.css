@@ -177,11 +177,11 @@ h1#titulo a:hover
 }
 
 #menu3 {
-    overflow: hidden;
-    position: absolute;
-    width: 350px;
-    top: 109px;
-    left: 75.7%;
+  overflow: hidden;
+position: absolute;
+width: 220px;
+top: 109px;
+left: 84.7%;
 }
 
 #menu3 ul {
@@ -243,7 +243,7 @@ h1#titulo a:hover
 div#pie
 {
   position: relative;
-  height: 15%;
+  height: 10.5%;
   background-color: black;
 }
 
@@ -296,4 +296,82 @@ table.blueTable tbody tr:hover
 {
   background-color: #787777;
   text-align: center;
+}
+
+#formulario
+{
+  margin-top: 120px;
+  margin-bottom: 120px;
+background-color: #919191;
+border: 2px solid black;
+border-radius: 10px;
+padding: 20px;
+width: 30%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#formulario h2
+{
+  text-align: center;
+}
+
+#formulario2
+{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  background-color: #919191;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+#formulario2 h2
+{
+  text-align: center;
+}
+
+#formularioRegistro
+{
+  margin-top: 180px;
+  margin-bottom: 180px;
+  background-color: #919191;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#formularioRegistro h2
+{
+  text-align: center;
+}
+
+.css {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.css2 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d1fbff;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
