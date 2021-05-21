@@ -10,6 +10,7 @@
     include("datos.php");
    ?>
 	 <script src="js/jquery-3.6.0.min.js"></script>
+	 <script src="js/loginMongo.js"></script>
 </head>
 
 <body>
@@ -53,7 +54,7 @@
     </div>
     <input class="css2" id="enviar" type="submit" value="Enviar" />
 </form>
-<form id="formulario2" action="loginUsuarioMongo.php" method="post">
+<form id="formulario2" method="post">
     <div id="infoWeb">
         <h2>Autores</h2>
         <label for="user2">Usuario</label>
@@ -61,17 +62,17 @@
         <label for="password2">Contraseña</label>
         <input class="css" type="password" id="password2" name="password2" placeholder="Escriba su contraseña" /><br>
     </div>
-    <input class="css2" id="enviar" type="submit" value="Enviar" />
+    <button type="button" class="css2" id="enviar2">Enviar</button>
 </form>
 
-<button>Autores</button>
-<button style="display : none">Usuarios</button>
+<button class="button"	>Autores</button>
+<button class="button" style="display : none">Usuarios</button>
 
 <script>
-	$("button").click( function()
+	$(".button").click( function()
 				 {
 					 $("form").toggle("slow");
-					 $("button").toggle();
+					 $(".button").toggle();
 				 }
 			);
 </script>

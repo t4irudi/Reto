@@ -47,7 +47,7 @@
 
 	<div id="cuerpo">
 		<?php
-		echo $_SESSION['user']['id_user'];
+		echo $_SESSION['user'];
 		 ?>
 		 <table id="tablaCastellano" class="blueTable">
  			<thead>
