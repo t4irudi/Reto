@@ -130,7 +130,187 @@ var preguntas = [{
         "categoria": "fol",
         "id_autor": 3,
         "modificaciones": []
-    }
+    },
+    {
+        "pregunta": "The character Mario has appeared in lots of video games, but his name hasn't always been Mario. What was his original name?",
+        "a": "Ossan",
+        "b": "Plumber Guy",
+        "c": "Martin",
+        "d": "Red guy",
+        "respuesta": "a",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "What was the first video game ever to be played in space?",
+        "a": "Tetris",
+        "b": "World of warcraft",
+        "c": "Pong",
+        "d": "Pac-Man",
+        "respuesta": "a",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "Everyone knows that Sonic is a hedgehog, but he didn't start out that way. What animal was Sonic originally supposed to be?",
+        "a": "A monkey",
+        "b": "An armadillo",
+        "c": "A porcupine",
+        "d": "A rabbit",
+        "respuesta": "d",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "What character inspired the look of the character Link in The Legend of Zelda?",
+        "a": "Santa’s gnome",
+        "b": "Peter pan",
+        "c": "Hawkeye",
+        "d": "Yoda",
+        "respuesta": "b",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "There's a lot of unusual sounds in the video game Minecraft. What animal was recorded to make the sound of the ‘ghast’?",
+        "a": "A peacock",
+        "b": "A cat",
+        "c": "A rat",
+        "d": "A baboon",
+        "respuesta": "b",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    }/*,
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    },
+    {
+        "pregunta": "",
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "",
+        "respuesta": "",
+        "explicacion": "",
+        "categoria": "ingles",
+        "id_autor": 4,
+        "modificaciones": []
+    }*/
 ];
 
 var autores = [{
