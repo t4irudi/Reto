@@ -10,6 +10,7 @@ var preguntaSchema = mongoose.Schema({
     d: String,
     respuesta: String,
     explicacion: String,
+    imagen: String,
     categoria: String,
     autor: Number
 }, {
