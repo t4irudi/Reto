@@ -159,7 +159,7 @@ var autores = [{
         "user": "jaime",
         "pwd": "Almi123",
         "nombre": "Jaime",
-        "apellidos": "Almi123"
+        "apellidos": "a"
     },
     {
         "_id": 5,
