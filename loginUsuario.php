@@ -11,6 +11,6 @@
     session_start();
     $_SESSION['user'] = $user;
     var_dump($_SESSION['user']);
-    //header("location: index2.php");
+    header("location: modificarUsuario.php");
   }
 ?>
