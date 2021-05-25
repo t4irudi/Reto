@@ -7,7 +7,7 @@ var preguntas = [{
         "d": "Todas son incorrectas",
         "respuesta": "c",
         "explicacion": "Es una señal de peligro",
-        "imagen": "imagenes\fol\i1.png",
+        "imagen": 1,
         "categoria": "fol",
         "id_autor": 1,
         "modificaciones": [{
@@ -24,7 +24,7 @@ var preguntas = [{
         "d": "3m",
         "respuesta": "a",
         "explicacion": "Los desniveles cuya altura de caída sea igual o superior a 2 deben ser protegidos",
-        "imagen": "imagenes\fol\i2.png",
+        "imagen": 2,
         "categoria": "fol",
         "id_autor": 2,
         "modificaciones": [{
@@ -41,7 +41,7 @@ var preguntas = [{
         "d": "Todas son incorrectas",
         "respuesta": "b",
         "explicacion": "la Higiene Industrial es la técnica que previene la aparición de enfermedades profesionales",
-        "imagen": "imagenes\fol\i3.png",
+        "imagen": 3,
         "categoria": "fol",
         "id_autor": 2,
         "modificaciones": [{
@@ -58,7 +58,7 @@ var preguntas = [{
         "d": "Todas son incorrectas",
         "respuesta": "c",
         "explicacion": "La salud laboral tiene la finalidad de mejorar las condiciones de trabajo para preservar la salud de los trabajadores o trabajadoras",
-        "imagen": "imagenes\fol\i4.png",
+        "imagen": 4,
         "categoria": "fol",
         "id_autor": 2,
         "modificaciones": [{
@@ -75,7 +75,7 @@ var preguntas = [{
         "d": "Todas son correctas",
         "respuesta": "d",
         "explicacion": "Las tres primeras son obligaciones del trabajador en materia de prevención de riesgos laborales",
-        "imagen": "imagenes\fol\i5.png",
+        "imagen": 5,
         "categoria": "fol",
         "id_autor": 3,
         "modificaciones": [{
@@ -92,7 +92,7 @@ var preguntas = [{
         "d": "Todas son correctas",
         "respuesta": "a",
         "explicacion": "los accidentes in itinere que son los que sufre el trabajador al ir al trabajo o al volver de este",
-        "imagen": "imagenes\fol\i6.png",
+        "imagen": 6,
         "categoria": "fol",
         "id_autor": 1,
         "modificaciones": [{
@@ -109,7 +109,7 @@ var preguntas = [{
         "d": "Auditiva",
         "respuesta": "a",
         "explicacion": "La auditiva no es una vía de entrada de los agentes biológicos",
-        "imagen": "imagenes\fol\i7.png",
+        "imagen": 7,
         "categoria": "fol",
         "id_autor": 2,
         "modificaciones": [{
@@ -126,7 +126,7 @@ var preguntas = [{
         "d": "Todas son correctas",
         "respuesta": "c",
         "explicacion": "La Ley de P.R.L obliga al empresario a facilitar formación teórica y práctica en materia de prevención de riesgos laborales, dentro de la jornada laboral y de forma gratuita para el trabajador",
-        "imagen": "imagenes\fol\i8.png",
+        "imagen": 8,
         "categoria": "fol",
         "id_autor": 3,
         "modificaciones": [{
@@ -143,7 +143,7 @@ var preguntas = [{
         "d": "Todas son incorrectas",
         "respuesta": "b",
         "explicacion": "Un plan de emergencia consiste en establecer una serie de actuaciones encaminadas a eliminar o disminuir los daños a personas y bienes derivados de la activación de un riesgo",
-        "imagen": "imagenes\fol\i9.png",
+        "imagen": 9,
         "categoria": "fol",
         "id_autor": 1,
         "modificaciones": [{
@@ -160,7 +160,7 @@ var preguntas = [{
         "d": "Ninguna es correcta",
         "respuesta": "a",
         "explicacion": "El artículo 40.2 de la Constitución Española encomienda a los poderes públicos, como uno de los principios rectores de la política social y económica, velar por la seguridad e higiene en el trabajo",
-        "imagen": "imagenes\fol\i10.png",
+        "imagen": 10,
         "categoria": "fol",
         "id_autor": 2,
         "modificaciones": [{
@@ -177,7 +177,7 @@ var preguntas = [{
         "d": "Red guy",
         "respuesta": "a",
         "explicacion": "",
-        "imagen": "imagenes\ingles\1.png",
+        "imagen": 1,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -190,7 +190,7 @@ var preguntas = [{
         "d": "Pac-Man",
         "respuesta": "a",
         "explicacion": "",
-        "imagen": "imagenes\ingles\2.png",
+        "imagen": 2,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -203,7 +203,7 @@ var preguntas = [{
         "d": "A rabbit",
         "respuesta": "d",
         "explicacion": "",
-        "imagen": "imagenes\ingles\3.png",
+        "imagen": 3,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -216,7 +216,7 @@ var preguntas = [{
         "d": "Yoda",
         "respuesta": "b",
         "explicacion": "",
-        "imagen": "imagenes\ingles\4.png",
+        "imagen": 4,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -229,7 +229,7 @@ var preguntas = [{
         "d": "A baboon",
         "respuesta": "b",
         "explicacion": "",
-        "imagen": "imagenes\ingles\5.png",
+        "imagen": 5,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -242,7 +242,7 @@ var preguntas = [{
         "d": "Dead Space",
         "respuesta": "c",
         "explicacion": "",
-        "imagen": "imagenes\ingles\6.png",
+        "imagen": 6,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -255,7 +255,7 @@ var preguntas = [{
         "d": "Monster Hunter",
         "respuesta": "d",
         "explicacion": "",
-        "imagen": "imagenes\ingles\7.png",
+        "imagen": 7,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -268,7 +268,7 @@ var preguntas = [{
         "d": "Plasma Snake",
         "respuesta": "c",
         "explicacion": "",
-        "imagen": "imagenes\ingles\8.png",
+        "imagen": 8,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -281,7 +281,7 @@ var preguntas = [{
         "d": "Nico Belic",
         "respuesta": "d",
         "explicacion": "",
-        "imagen": "imagenes\ingles\9.png",
+        "imagen": 9,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -293,7 +293,7 @@ var preguntas = [{
         "c": "Assassin’s Creed: Brotherhood",
         "d": "Assassin’s Creed: Odyssey",
         "respuesta": "a",
-        "explicacion": "imagenes\ingles\10.png",
+        "explicacion": 10,
         "imagen": "",
         "categoria": "ingles",
         "id_autor": 4,
@@ -307,7 +307,7 @@ var preguntas = [{
         "d": "Daisy",
         "respuesta": "b",
         "explicacion": "",
-        "imagen": "imagenes\ingles\11.png",
+        "imagen": 11,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -320,7 +320,7 @@ var preguntas = [{
         "d": "Sunset Overdrive",
         "respuesta": "c",
         "explicacion": "",
-        "imagen": "imagenes\ingles\12.png",
+        "imagen": 12,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -333,7 +333,7 @@ var preguntas = [{
         "d": "Fable",
         "respuesta": "a",
         "explicacion": "",
-        "imagen": "imagenes\ingles\13.png",
+        "imagen": 13,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -345,8 +345,8 @@ var preguntas = [{
         "c": "Monklesh",
         "d": "Simlish",
         "respuesta": "d",
-        "explicacion": "imagenes\ingles\14.png",
-        "imagen": "",
+        "explicacion": "imagenes/ingles/14.png",
+        "imagen": 14,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []
@@ -359,7 +359,7 @@ var preguntas = [{
         "d": "Going Ghost",
         "respuesta": "b",
         "explicacion": "",
-        "imagen": "imagenes\ingles\15.png",
+        "imagen": 15,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []

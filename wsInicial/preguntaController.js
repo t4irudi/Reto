@@ -41,7 +41,6 @@ exports.getTodas = function(req, res) {
 };
 exports.newPregunta = function(req, res) {
     var preg = new Pregunta();
-    var aut = new Autor();
     preg.idioma = req.body.idioma;
     preg.pregunta = req.body.pregunta;
     preg.a = req.body.a;
