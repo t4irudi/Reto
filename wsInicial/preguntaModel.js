@@ -2,7 +2,6 @@ var mongoose = require('mongoose');
 
 //Setup Schema
 var preguntaSchema = mongoose.Schema({
-    idioma: String,
     pregunta: String,
     a: String,
     b: String,
@@ -11,8 +10,8 @@ var preguntaSchema = mongoose.Schema({
     respuesta: String,
     explicacion: String,
     imagen: String,
-    categoria: String,
-    autor: Number
+    categoria: String
+        //autor: Number
 }, {
     collection: 'preguntas'
 });

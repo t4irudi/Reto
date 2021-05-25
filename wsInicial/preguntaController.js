@@ -40,19 +40,29 @@ exports.getTodas = function(req, res) {
     });
 };
 exports.newPregunta = function(req, res) {
+    console.log(0);
     var preg = new Pregunta();
-    preg.idioma = req.body.idioma;
+    console.log(1);
     preg.pregunta = req.body.pregunta;
+    console.log(preg.pregunta);
     preg.a = req.body.a;
+    console.log(preg.a);
     preg.b = req.body.b;
+    console.log(preg.b);
     preg.c = req.body.c;
+    console.log(preg.c);
     preg.d = req.body.d;
+    console.log(preg.d);
     preg.respuesta = req.body.respuesta;
+    console.log(preg.respuesta);
     preg.explicacion = req.body.explicacion;
+    console.log(preg.explicacion);
     preg.imagen = req.body.imagen;
+    console.log(preg.imagen);
     preg.categoria = req.body.categoria;
-    preg.autor = req.body.autor;
-    console.log("post?");
+    console.log(preg.categoria);
+    //preg.autor = req.body.autor;
+    console.log("post pregunta");
     preg.save(function(err) {
         if (err) {
             res.json({
