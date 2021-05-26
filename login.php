@@ -46,7 +46,7 @@
 
 <form id="formulario" action="loginUsuario.php" method="post">
     <div id="infoWeb">
-        <h2>Usuarios</h2>
+        <h2>Jugadores</h2>
         <label for="user">Usuario</label>
         <input class="css" type="text" id="user" name="user" placeholder="Escriba su usuario" /><br>
         <label for="password">Contraseña</label>
@@ -66,7 +66,7 @@
 </form>
 
 <button class="button"	>Autores</button>
-<button class="button" style="display : none">Usuarios</button>
+<button class="button" style="display : none">Jugadores</button>
 
 <script>
 	$(".button").click( function()

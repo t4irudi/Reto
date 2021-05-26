@@ -8,6 +8,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
+<script src="js/jquery-3.6.0.min.js"></script>
 <?php
   session_start();
   if (isset( $_SESSION["user"]) == false) {
@@ -47,33 +48,38 @@
 
 	<div id="cuerpo">
 		<?php
-		  echo $_SESSION['user']['id_user'];
+		  echo "<h2 id='tituloUsername'>Bienvenido <span>". $_SESSION['user']['user'] ."</span></h2>";
 		 ?>
 		 <table id="tablaCastellano" class="blueTable">
  			<thead>
  				<tr>
- 					<th class="numberFila">Nombre</th>
- 					<th class="thPregunta">Apellido </th>
- 					<th class="th">UserName</th>
+ 					<th class="thPregunta">Nombre </th>
+ 					<th class="th">Apellido</th>
  					<th class="th">Password</th>
  				</tr>
+
  			</thead>
- 			<tbody>
+ 			<tbody id='userInfo'>
  				<?php
 					echo "<tr>";
 						echo "<td>". $_SESSION['user']['nombre'] ."</td>";
 						echo "<td>". $_SESSION['user']['apellidos'] ."</td>";
-						echo "<td>". $_SESSION['user']['user'] ."</td>";
 						echo "<td>". $_SESSION['user']['pwd'] ."</td>";
 					echo "</tr>";
+
  				?>
  				</tbody>
  			</table>
-			<button onclick="acceptWindow()">¡¡BORRAR USUARIO!!</button>
+
+			<?php
+			if ($_SESSION['user']['id_user']>5) {
+			echo	'<button id="borrar" onclick="acceptWindow()">¡¡BORRAR USUARIO!!</button>';
+			}
+			?>
 			<script>
 			function acceptWindow() {
 
-	  		var r = confirm("Estas seguro de que deseas borrar el usuario?");
+	  		var r = confirm("Estas seguro de que deseas borrar tu usuario? Sería una falta de respeto.");
 	  		if (r == true) {
 					window.location.href = 'borrarUsuario.php';
 	  		}else{
@@ -82,6 +88,33 @@
 
 			}
 		</script>
+		<div id="userInfoPanel">
+	      <label>Antigua contraseña</label>
+	      <input type="text" class="css" id="resA" placeholder="Escriba aqui la primera respuesta" >
+	      <br>
+	      <label>Contraseña nueva</label>
+	      <input type="text" class="css" id="resB" placeholder="Escriba aqui la segunda respuesta">
+	      <br>
+	      <label>Repita repit la contraseña</label>
+	      <input type="text" class="css" id="resC" placeholder="Escriba aqui la tercera respuesta">
+	      <br>
+			</div>
+
+		<button class="button1"	>Modificar</button>
+		<button class="button2" style="display : none">Guardar</button>
+
+		<script>
+			$(".button1").click( function()
+						 {
+							 $("#tablaCastellano").toggle("slow");
+							 $("#userInfoPanel").toggle("slow");
+							 $(".button1").toggle();
+							 $(".button2").toggle();
+							 $("#borrar").toggle();
+						 }
+					);
+		</script>
+
 	</div>
 <tr>
 	<td></td>
@@ -89,7 +122,7 @@
 	<div id="pie">
 		<p id="Copyright">Copyright 1999-2021 by t4Irudi Data. All Rights Reserved. T4 is powered by la planta santa</p>
 	</div>
-<script src="js/jquery-3.6.0.min.js"></script>
+
 </body>
 
 </html>
