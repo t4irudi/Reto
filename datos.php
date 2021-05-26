@@ -61,8 +61,8 @@ function conectarBBDD()
       $usuario = "";
       $contrasena = "";
       $nombre = "";
-      $apellido = "";
-      $vincular = $sentencia->bind_result($id, $usuario, $contrasena, $nombre, $apellido);
+      $apellidos = "";
+      $vincular = $sentencia->bind_result($id, $usuario, $contrasena, $nombre, $apellidos);
 
       if(!$vincular)
       {
@@ -78,7 +78,7 @@ function conectarBBDD()
           'user' => $usuario,
           'pwd' => $contrasena,
           'nombre' => $nombre,
-          'apellido' => $apellido
+          'apellidos' => $apellidos
         );
       }
       $mysqli->close();

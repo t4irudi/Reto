@@ -47,7 +47,7 @@
 
 	<div id="cuerpo">
 		<?php
-		echo $_SESSION['user'];
+		  echo $_SESSION['user']['id_user'];
 		 ?>
 		 <table id="tablaCastellano" class="blueTable">
  			<thead>
@@ -62,7 +62,7 @@
  				<?php
 					echo "<tr>";
 						echo "<td>". $_SESSION['user']['nombre'] ."</td>";
-						echo "<td>". $_SESSION['user']['apellido'] ."</td>";
+						echo "<td>". $_SESSION['user']['apellidos'] ."</td>";
 						echo "<td>". $_SESSION['user']['user'] ."</td>";
 						echo "<td>". $_SESSION['user']['pwd'] ."</td>";
 					echo "</tr>";

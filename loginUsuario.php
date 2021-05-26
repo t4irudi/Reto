@@ -7,7 +7,7 @@
 
     header("location: login.php");
   }else {
-
+    session_unset();
     session_start();
     $_SESSION['user'] = $user;
     var_dump($_SESSION['user']);

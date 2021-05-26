@@ -24,11 +24,10 @@ $(document).ready(function()
               dataDos.datos = data;
             $.ajax({
               data: dataDos,
-              url: "http://127.0.0.1/Reto/servicios.php",
+              url: "http://192.168.6.165/Reto/servicios.php",
               type:"post",
               success:function(response)
               {
-                  console.log(response);
                   window.location.href = "modificarUsuario.php";
 
               },
