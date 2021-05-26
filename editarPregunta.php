@@ -11,7 +11,14 @@
 
 
 </head>
-
+<?php
+  session_start();
+  if (isset( $_SESSION["user"]) == false) {
+    header("location: login.php");
+  }
+  include("datos.php");
+  $id = $_POST['_id'];
+?>
 <body>
 
 	<div id="cabeza">
@@ -30,14 +37,11 @@
             </ul>
         </div>
 				<div id="menu2">
-		         <ul>
-		             <li>
-		                 <a href="registro.php">Registro</a>
-		             </li>
-							<li>
-								<a href="login.php">Login</a>
+		        <ul>
+						  <li>
+								<a href="logOut.php">Cerrar Sesion</a>
 							</li>
-		         </ul>
+		        </ul>
 		    </div>
 	</div>
 
@@ -83,7 +87,7 @@
         <option value="ingles">Ingles</option>
       </select>
       <br>
-      <button id="nuevaPregunta" class="css2" name="enviar" value="enviar">Enviar</button>
+      <button id="enviar" class="css2" name="enviar" value="enviar">Enviar</button>
     </div>
 
   </div>
@@ -92,7 +96,54 @@
     <p id="Copyright">Copyright 1999-2021 by t4Irudi Data. All Rights Reserved. T4 is powered by la planta santa</p>
   </div>
   <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/preguntasMongo.js"></script>
+  <script>
+    $("#enviar").on('click', function(event) {
+    var id = "<?php echo $id;?>"
+    var pregunta = $("#pregunta").val();
+    var resA = $("#resA").val();
+    var resB = $("#resB").val();
+    var resC = $("#resC").val();
+    var resD = $("#resD").val();
+    var rb = $('input:radio[name=rb]:checked').val();
+    var exp= $("#explicacion").val();
+    var img = $("#imagen").val();
+    var tipo = $('#tipo').val();
+
+    var params = {
+      pregunta: pregunta,
+      a: resA,
+      b: resB,
+      c: resC,
+      d: resD,
+      respuesta: rb,
+      explicacion: exp,
+      imagen: img,
+      categoria: tipo
+    }
+     if (pregunta.trim().length == 0 || resA.trim().length == 0 || resB.trim().length == 0 || resC.trim().length == 0 || resD.trim().length == 0
+       || exp.trim().length == 0  || img.trim().length == 0 ) {
+       alert("No puede quedar ningún campo vacío.");
+       event.preventDefault();
+     } else {
+       $.ajax({
+         data: params,
+         url: "http://192.168.6.169:8080/api/preguntas/" + id,
+         type: "put",
+         success: function(res) {
+             console.log('success');
+             location.reload(true);
+             },
+         error: function(err) {
+           console.log('err');
+           console.log(err);
+         }
+       });
+     }
+
+
+
+  });
+  </script>
 </body>
 
 </html>

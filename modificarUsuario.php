@@ -12,7 +12,6 @@
 <?php
   session_start();
   if (isset( $_SESSION["user"]) == false) {
-    // code...
     header("location: login.php");
   }
   include("datos.php");
@@ -26,22 +25,19 @@
                 <li class="active">
                     <a href="index">Inicio</a>
                 </li>
-								<li>
-									<a href="ingles.php">Ingles</a>
-								</li>
-								<li>
-									<a href="castellano.php">Castellano</a>
-								</li>
+				<li>
+					<a href="ingles.php">Ingles</a>
+				</li>
+				<li>
+					<a href="castellano.php">Castellano</a>
+				</li>
             </ul>
         </div>
 				<div id="menu3">
 		         <ul>
-		             <li>
-										 <a href="#">Modificar</a>
-		             </li>
-								 <li>
-									 <a href="logOut.php">Cerrar Sesion</a>
-								 </li>
+					<li>
+						<a href="logOut.php">Cerrar Sesion</a>
+					</li>
 		         </ul>
 		    </div>
 	</div>
