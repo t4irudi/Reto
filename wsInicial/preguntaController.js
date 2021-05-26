@@ -124,3 +124,16 @@ exports.deleteOne = function(req, res) {
         }
     }, id);
 };
+
+exports.getOne = function(req, res) {
+    Pregunta.getOne(function(err, preguntas) {
+        if (err) {
+            res.json({
+                status: ":(",
+                message: err
+            });
+        } else {
+            res.json(preguntas);
+        }
+    }, id);
+};

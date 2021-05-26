@@ -1,6 +1,6 @@
 //CREAR UN ARRAY VACIO Y METER PREGUNTAS EN EL
 var preguntas = [{
-        "pregunta": "Que indica esta señal:",
+        "pregunta": "¿Qué indica esta señal?",
         "a": "Obligación",
         "b": "Auxilio",
         "c": "Peligro",
@@ -17,7 +17,7 @@ var preguntas = [{
         }]
     },
     {
-        "pregunta": "A partir de que altura es obligatoria la protección de desniveles?",
+        "pregunta": "¿A partir de que altura es obligatoria la protección de desniveles?",
         "a": "2m",
         "b": "1,5m",
         "c": "1m",
@@ -53,11 +53,11 @@ var preguntas = [{
     {
         "pregunta": "De acuerdo con la Ley de PRL: ¿Cuál de las siguientes definiciones no es correcta?",
         "a": "Riesgo laboral es la posibilidad de que un trabajador o trabajadora sufra un determinado daño derivado del trabajo",
-        "b": "Peligro es la fuente de posible lesión o daño para la salud",
+        "b": "Peligro es una fuente de posible lesión o daño para la salud",
         "c": "Los conceptos de salud y trabajo son independientes y no están relacionados",
         "d": "Todas son incorrectas",
         "respuesta": "c",
-        "explicacion": "La salud laboral tiene la finalidad de mejorar las condiciones de trabajo para preservar la salud de los trabajadores o trabajadoras",
+        "explicacion": "La salud laboral tiene la finalidad de mejorar las condiciones de trabajo para preservar la salud de los trabajadores",
         "imagen": 4,
         "categoria": "fol",
         "id_autor": 2,
@@ -68,8 +68,8 @@ var preguntas = [{
         }]
     },
     {
-        "pregunta": "Cuál de las siguientes es una obligación del trabajador?",
-        "a": "Colaborar para la mejora de la seguridad y la salud en el trabajo",
+        "pregunta": "¿Cuál de las siguientes es una obligación del trabajador?",
+        "a": "Colaborar para la mejorar de la seguridad y la salud en el trabajo",
         "b": "Contribuir a cumplir las exigencias de la autoridad competente",
         "c": "Utilizar correctamente equipos y materiales",
         "d": "Todas son correctas",
@@ -91,7 +91,7 @@ var preguntas = [{
         "c": "Es una dolencia profesional",
         "d": "Todas son correctas",
         "respuesta": "a",
-        "explicacion": "los accidentes in itinere que son los que sufre el trabajador al ir al trabajo o al volver de este",
+        "explicacion": "Los accidentes in itinere que son los que sufre el trabajador al ir al trabajo o al volver de este",
         "imagen": 6,
         "categoria": "fol",
         "id_autor": 1,
@@ -102,12 +102,12 @@ var preguntas = [{
         }]
     },
     {
-        "pregunta": "Cuál de las siguientes no es una vía de entrada de los agentes biológicos?",
+        "pregunta": "¿Cuál de las siguientes no es una vía de entrada de los agentes biológicos?",
         "a": "Respiratoria",
         "b": "Dérmica",
         "c": "Digestiva",
         "d": "Auditiva",
-        "respuesta": "a",
+        "respuesta": "d",
         "explicacion": "La auditiva no es una vía de entrada de los agentes biológicos",
         "imagen": 7,
         "categoria": "fol",
@@ -153,7 +153,7 @@ var preguntas = [{
         }]
     },
     {
-        "pregunta": "¿En España, quién encomienda a los poderes Públicos, velar por la seguridad e higiene en el trabajo?",
+        "pregunta": "¿En España, quién encomienda a los poderes públicos, velar por la seguridad e higiene en el trabajo?",
         "a": "La Constitución Española",
         "b": "Seguridad e Higiene en el Trabajo",
         "c": "La Comunidad Autónoma respectiva",
@@ -261,7 +261,7 @@ var preguntas = [{
         "modificaciones": []
     },
     {
-        "pregunta": "Whats the name of Solid Snake’s brother?",
+        "pregunta": "What is the name of Solid Snake’s brother?",
         "a": "Solid Cobra",
         "b": "Gas Snake",
         "c": "Liquid Snake",
@@ -293,8 +293,8 @@ var preguntas = [{
         "c": "Assassin’s Creed: Brotherhood",
         "d": "Assassin’s Creed: Odyssey",
         "respuesta": "a",
-        "explicacion": 10,
-        "imagen": "",
+        "explicacion": "",
+        "imagen": 10,
         "categoria": "ingles",
         "id_autor": 4,
         "modificaciones": []

@@ -46,3 +46,8 @@ module.exports.getLimit = function(callback, limit, skip) {
 module.exports.deletePregunta = function(callback, id) {
     Pregunta.deleteOne({ '_id': id }, callback);
 };
+
+module.exports.updateOne = function(callback, id, pregunta) {
+    Pregunta.findOneAndUpdate({ '_id': id }, pregunta, callback);
+    console.log('getOne');
+};

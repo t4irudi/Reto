@@ -23,7 +23,7 @@ router.route('/preguntas/english').get(preguntaController.getIngles);
 router.route('/preguntas').get(preguntaController.getTodas).post(preguntaController.newPregunta);
 
 //Ruta para preguntas con id especifica
-router.route('/preguntas/:id').put(preguntaController.updateOne).delete(preguntaController.deleteOne);
+router.route('/preguntas/:id').get(preguntaController.getOne).put(preguntaController.updateOne).delete(preguntaController.deleteOne);
 
 //Ruta para los limits del loren
 router.route('/preguntas/limit').get(preguntaController.getLimit);
