@@ -86,6 +86,7 @@
 				</tbody>
 			</table>
 			<script>
+				
 					$('.borrar').click(function (event) {
     					if (confirm("¿Desea eliminar esta tabla?")) {
       						var id = $(this).val();
