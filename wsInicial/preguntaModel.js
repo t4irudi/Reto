@@ -47,7 +47,7 @@ module.exports.deletePregunta = function(callback, id) {
     Pregunta.deleteOne({ '_id': id }, callback);
 };
 
-module.exports.updateOne = function(callback, id, pregunta) {
-    Pregunta.findOneAndUpdate({ '_id': id }, pregunta, callback);
+module.exports.getOne = function(callback, id, pregunta) {
+    Pregunta.findOne({ '_id': id }, pregunta, callback);
     console.log('getOne');
 };
