@@ -1,0 +1,406 @@
+
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+body
+{
+    background-color: #a6a6a6;
+    height: 100%;
+}
+
+div#cabeza
+{
+  height: 20%;
+  width: 100%;
+  background-color: black;
+}
+
+h1#titulo
+{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 80;
+  font-weight: bold;
+  color: #46b1c2;
+  padding: 20px;
+  width: 97%;
+  text-decoration: overline;
+  position: relative;
+  text-align: center;
+
+}
+
+h1#titulo a
+{
+  text-decoration: none;
+  color: #3f98a6;
+  opacity: 0,5;
+  transition: 1s;
+}
+
+h1#titulo a:hover
+{
+  color: #00fffa;
+  opacity: 1;
+}
+
+#menu {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    top: -24px;
+    width: 100%;
+}
+
+#menu ul {
+    list-style-type: none;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+
+}
+
+#menu li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+#menu .active {
+    background-color: grey;
+
+}
+
+#menu li ul li {
+    display: none;
+    position: absolute;
+    position: fixed;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#menu li:hover ul li {
+    display: block;
+}
+
+#menu li ul li a {
+    width: 110px;
+}
+
+#menu li ul li:nth-child(2) {
+    margin-top: 46px;
+}
+
+#menu li ul li:nth-child(3) {
+    margin-top: 92px;
+}
+
+#menu li ul li:nth-child(4) {
+    margin-top: 138px;
+}
+
+#menu2 {
+    overflow: hidden;
+    position: absolute;
+    width: 161px;
+    top: 109px;
+    left: 88.7%;
+}
+
+#menu2 ul {
+    list-style-type: none;
+}
+
+#menu2 li {
+    float: left;
+}
+
+#menu2 li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+
+}
+
+#menu2 li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+#menu2 .active {
+    background-color: grey;
+
+}
+
+#menu2 li ul li {
+    display: none;
+    position: absolute;
+    position: fixed;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#menu2 li:hover ul li {
+    display: block;
+}
+
+#menu2 li ul li a {
+    width: 110px;
+}
+
+#menu2 li ul li:nth-child(2) {
+    margin-top: 46px;
+}
+
+#menu2 li ul li:nth-child(3) {
+    margin-top: 92px;
+}
+
+#menu2 li ul li:nth-child(4) {
+    margin-top: 138px;
+}
+
+#menu3 {
+  overflow: hidden;
+position: absolute;
+width: 220px;
+top: 109px;
+left: 84.7%;
+}
+
+#menu3 ul {
+    list-style-type: none;
+}
+
+#menu3 li {
+    float: left;
+}
+
+#menu3 li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border: 1px solid white;
+
+}
+
+#menu3 li a:hover {
+    background-color: grey;
+    color: white;
+}
+
+#menu3 .active {
+    background-color: grey;
+
+}
+
+#menu3 li ul li {
+    display: none;
+    position: absolute;
+    position: fixed;
+    background-color: black;
+    border: 1px solid white;
+}
+
+#menu3 li:hover ul li {
+    display: block;
+}
+
+#menu3 li ul li a {
+    width: 110px;
+}
+
+#menu3 li ul li:nth-child(2) {
+    margin-top: 46px;
+}
+
+#menu3 li ul li:nth-child(3) {
+    margin-top: 92px;
+}
+
+#menu3 li ul li:nth-child(4) {
+    margin-top: 138px;
+}
+
+div#pie
+{
+  position: relative;
+  height: 10.5%;
+  background-color: black;
+}
+
+div#pie p#Copyright
+{
+  position: relative;
+  padding: 10px;
+  color: white;
+}
+
+table.blueTable
+{
+  width: 88%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 5px solid black;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #949494;
+  text-align: center;
+}
+
+table.blueTable thead
+{
+  border-bottom: 5px solid black;
+  text-align: center;
+}
+
+table.blueTable tbody tr td
+{
+  text-align: center;
+  border: 1px solid black;
+}
+
+table.blueTable thead tr
+{
+  font-weight: bolder;
+  font-size: 40;
+  text-align: center;
+}
+
+table.blueTable tbody tr
+{
+  text-align: center;
+
+  min-height: 30px;
+}
+
+table.blueTable tbody tr:hover
+{
+  background-color: #787777;
+  text-align: center;
+}
+
+#formulario
+{
+  margin-top: 120px;
+  margin-bottom: 120px;
+background-color: #919191;
+border: 2px solid black;
+border-radius: 10px;
+padding: 20px;
+width: 30%;
+margin-left: auto;
+margin-right: auto;
+}
+
+#formulario h2
+{
+  text-align: center;
+}
+
+#formulario2
+{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  background-color: #919191;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+#formulario2 h2
+{
+  text-align: center;
+}
+
+#formularioRegistro
+{
+  margin-top: 180px;
+  margin-bottom: 180px;
+  background-color: #919191;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#formularioRegistro h2
+{
+  text-align: center;
+}
+
+.css {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.css2 {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #d1fbff;
+  color: black;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+h2#tituloUsername
+{
+  width: 100%;
+  text_align: center;
+}
+
+.img, .borrar
+{
+    height: 40px;
+    width: 40px;
+}
+div#userInfoPanel
+{
+  margin-top: 120px;
+  margin-bottom: 120px;
+  background-color: #919191;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+  display: none;
+}
+
+div#userInfoPanel h2
+{
+  text-align: center;
+}
