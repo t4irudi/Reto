@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
+	<script src="jquery-3.6.0.min.js"></script>
 </head>
 
 <body>
@@ -77,12 +77,36 @@
 							echo "<td class='td'>". $data[$i]['b'] . "</td>";
 							echo "<td class='td'>". $data[$i]['c'] . "</td>";
 							echo "<td class='td'>". $data[$i]['d'] . "</td>";
+							echo "<td class='editar'><a href='#'><img src='images/editar.png' class='img'/></td>";
+                            echo "<td><input type='image' class='borrar' value='".$data[$i]['_id']."' src='images/borrar.png' class='img'/></td>";
 						echo "</tr>";
 					}
-
 				?>
+				
 				</tbody>
 			</table>
+			<script>
+					$('.borrar').click(function (event) {
+    					if (confirm("¿Desea eliminar esta tabla?")) {
+      						var id = $(this).val();
+      						console.log(id);   						
+      						$.ajax({
+        						url: "http://192.168.6.169:8080/api/preguntas/" + id,
+        						type: "delete",
+        						success: function(res) {
+            						console.log('success');
+            						location.reload(true);
+            					},
+        						error: function(err) {
+          							console.log('err');
+          							console.log(err);
+        						}
+      						});      						
+    					} else {
+        					event.preventDefault();
+    					}
+  					});
+			</script>
 			<script src="jquery-3.6.0.min.js"></script>
 
 			<script>
@@ -113,7 +137,6 @@
 	<div id="pie">
 		<p id="Copyright">Copyright 1999-2021 by t4Irudi Data. All Rights Reserved. T4 is powered by la planta santa</p>
 	</div>
-<script src="js/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

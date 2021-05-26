@@ -92,12 +92,36 @@
 							echo "<td class='td'>". $data[$i]['b'] . "</td>";
 							echo "<td class='td'>". $data[$i]['c'] . "</td>";
 							echo "<td class='td'>". $data[$i]['d'] . "</td>";
+							echo "<td class='editar'><a href='#'><img src='images/editar.png' class='img'/></td>";
+                            echo "<td><input type='image' class='borrar' value='".$data[$i]['_id']."' src='images/borrar.png' class='img'/></td>";
 						echo "</tr>";
 					}
 				?>
+				
 				</tbody>
 			</table>
-
+			<script>
+					$('.borrar').click(function (event) {
+    					if (confirm("¿Desea eliminar esta tabla?")) {
+      						var id = $(this).val();
+      						console.log(id);   						
+      						$.ajax({
+        						url: "http://192.168.6.169:8080/api/preguntas/" + id,
+        						type: "delete",
+        						success: function(res) {
+            						console.log('success');
+            						location.reload(true);
+            					},
+        						error: function(err) {
+          							console.log('err');
+          							console.log(err);
+        						}
+      						});      						
+    					} else {
+        					event.preventDefault();
+    					}
+  					});
+			</script>
 			<script>
 				var tds = document.getElementsByClassName('td');
 				var ths = document.getElementsByClassName('th');

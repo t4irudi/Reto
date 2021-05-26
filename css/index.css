@@ -375,3 +375,9 @@ margin-right: auto;
   border-radius: 4px;
   cursor: pointer;
 }
+
+.img, .borrar
+{
+    height: 40px;
+    width: 40px;
+}
