@@ -9,7 +9,10 @@
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 <script src="jquery-3.6.0.min.js"></script>
 </head>
-
+<?php
+  session_start();
+  include("datos.php");
+?>
 <body>
 
 	<div id="cabeza">
@@ -19,24 +22,27 @@
                 <li class="active">
                     <a href="index.php">Inicio</a>
                 </li>
-								<li>
-									<a href="ingles.php">Ingles</a>
-								</li>
-								<li>
-									<a href="#">Castellano</a>
-								</li>
+				<li>
+					<a href="ingles.php">Ingles</a>
+				</li>
+				<li>
+					<a href="#">Castellano</a>
+				</li>
             </ul>
         </div>
-				<div id="menu2">
-		         <ul>
-		             <li>
-		                 <a href="registro.php">Registro</a>
-		             </li>
-							<li>
-								<a href="login.php">Login</a>
-							</li>
-		         </ul>
-		    </div>
+			<div id="menu2">
+		    <ul>
+				<?php
+        		if (isset($_SESSION["user"]) == false) {
+          			echo "<li><a href='registro.php'>Registro</a></li>";
+          			echo "<li><a href='login.php'>Login</a></li>";
+        		} else {
+          			echo "<li><a href='modificarUsuario.php'>Modificar Usuario</a></li>";
+          			echo "<li><a href='logOut.php'>Cerrar sesión</a></li>";
+        		}
+        		?>
+		    </ul>
+		</div>
 	</div>
 
 	<div id="cuerpo">
@@ -92,8 +98,12 @@
 							echo "<td class='td'>". $data[$i]['b'] . "</td>";
 							echo "<td class='td'>". $data[$i]['c'] . "</td>";
 							echo "<td class='td'>". $data[$i]['d'] . "</td>";
-							echo "<td class='editar'><a href='#'><img src='images/editar.png' class='img'/></td>";
-                            echo "<td><input type='image' class='borrar' value='".$data[$i]['_id']."' src='images/borrar.png' class='img'/></td>";
+							if (isset($_SESSION["user"]) == false) {
+								
+							} else {
+							  echo "<td class='editar'><a href='#'><img src='images/editar.png' class='img'/></td>";
+							  echo "<td><input type='image' class='borrar' value='".$data[$i]['_id']."' src='images/borrar.png' class='img'/></td>";
+							}
 						echo "</tr>";
 					}
 				?>
@@ -103,17 +113,14 @@
 			<script>
 					$('.borrar').click(function (event) {
     					if (confirm("¿Desea eliminar esta tabla?")) {
-      						var id = $(this).val();
-      						console.log(id);   						
+      						var id = $(this).val();					
       						$.ajax({
         						url: "http://192.168.6.169:8080/api/preguntas/" + id,
         						type: "delete",
         						success: function(res) {
-            						console.log('success');
             						location.reload(true);
             					},
         						error: function(err) {
-          							console.log('err');
           							console.log(err);
         						}
       						});      						
