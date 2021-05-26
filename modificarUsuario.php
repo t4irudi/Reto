@@ -9,9 +9,11 @@
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
 </head>
 <script src="js/jquery-3.6.0.min.js"></script>
+<script src="js/modificar.js"></script>
 <?php
   session_start();
   if (isset( $_SESSION["user"]) == false) {
+    // code...
     header("location: login.php");
   }
   include("datos.php");
@@ -25,19 +27,22 @@
                 <li class="active">
                     <a href="index">Inicio</a>
                 </li>
-				<li>
-					<a href="ingles.php">Ingles</a>
-				</li>
-				<li>
-					<a href="castellano.php">Castellano</a>
-				</li>
+								<li>
+									<a href="ingles.php">Ingles</a>
+								</li>
+								<li>
+									<a href="castellano.php">Castellano</a>
+								</li>
             </ul>
         </div>
 				<div id="menu3">
 		         <ul>
-					<li>
-						<a href="logOut.php">Cerrar Sesion</a>
-					</li>
+		             <li>
+										 <a href="#">Modificar</a>
+		             </li>
+								 <li>
+									 <a href="logOut.php">Cerrar Sesion</a>
+								 </li>
 		         </ul>
 		    </div>
 	</div>
@@ -85,30 +90,42 @@
 			}
 		</script>
 		<div id="userInfoPanel">
-	      <label>Antigua contraseña</label>
-	      <input type="text" class="css" id="resA" placeholder="Escriba aqui la primera respuesta" >
+	      <label>Antigua contraseña: </label>
+	      <input type="text" class="css" placeholder="Escriba su antigua contraseña" >
 	      <br>
-	      <label>Contraseña nueva</label>
-	      <input type="text" class="css" id="resB" placeholder="Escriba aqui la segunda respuesta">
-	      <br>
-	      <label>Repita repit la contraseña</label>
-	      <input type="text" class="css" id="resC" placeholder="Escriba aqui la tercera respuesta">
-	      <br>
+				<label for="password">Contraseña</label>
+				<input class="css" type="password" id="password" name="password" placeholder="Escriba su contraseña" /><br>
+				<br>
+				<label for="repassword">Repita su contraseña</label>
+				<input class="css" type="password" id="repassword" name="repassword" placeholder="Repita su contraseña" /><br>
+				<br>
+				<input class="css2" id="enviar" type="submit" value="Guardar" />
+
+
+
 			</div>
 
-		<button class="button1"	>Modificar</button>
-		<button class="button2" style="display : none">Guardar</button>
-
+		<button class="button1"	>Modificar contraseña</button>
+		<button class="button2" style="display : none">Atras</button>
 		<script>
 			$(".button1").click( function()
-						 {
-							 $("#tablaCastellano").toggle("slow");
-							 $("#userInfoPanel").toggle("slow");
-							 $(".button1").toggle();
-							 $(".button2").toggle();
-							 $("#borrar").toggle();
-						 }
-					);
+					{
+						$("#tablaCastellano").toggle("slow");
+						$("#userInfoPanel").toggle("slow");
+						$(".button1").toggle();
+						$(".button2").toggle();
+						$("#borrar").toggle();
+					}
+			);
+			$(".button2").click( function()
+					{
+						$("#tablaCastellano").toggle("slow");
+						$("#userInfoPanel").toggle("slow");
+						$(".button1").toggle();
+						$(".button2").toggle();
+						$("#borrar").toggle();
+					}
+			);
 		</script>
 
 	</div>
