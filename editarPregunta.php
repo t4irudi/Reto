@@ -45,49 +45,63 @@
 		    </div>
 	</div>
 
+  <?php
+		$ch = curl_init();
+		curl_setopt($ch, CURLOPT_URL, 'http://192.168.6.169:8080/api/preguntas/' + $id);
+		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+		curl_setopt($ch, CURLOPT_HEADER, 0);
+		$data = curl_exec($ch);
+		curl_close($ch);
+		$data = json_decode($data, true);
+
+		$count = count($data);
+	?>
+
 	<div id="cuerpo">
-<div id="formulario">
-      <label>Pregunta</label>
-      <input type="text" class="css" id="pregunta" placeholder="Escriba aqui la nueva pregunta">
-      <br>
-      <label>Respuesta A</label>
-      <input type="text" class="css" id="resA" placeholder="Escriba aqui la primera respuesta" >
-      <br>
-      <label>Respuesta B</label>
-      <input type="text" class="css" id="resB" placeholder="Escriba aqui la segunda respuesta">
-      <br>
-      <label>Respuesta C</label>
-      <input type="text" class="css" id="resC" placeholder="Escriba aqui la tercera respuesta">
-      <br>
-      <label>Respuesta D</label>
-      <input type="text" class="css" id="resD" placeholder="Escriba aqui la cuarta respuesta">
-      <br>
-      <label>Seleccione cual es la respuesta correcta</label>
-      <br>
-      <input type="radio"  name="rb" value="a" checked>
-      <label for="A">A</label>
-      <br>
-      <input type="radio" name="rb" value="b">
-      <label for="B">B</label>
-      <br>
-      <input type="radio" name="rb" value="c">
-      <label for="C">C</label>
-      <br>
-      <input type="radio" name="rb" value="d">
-      <label for="D">D</label>
-      <br>
-      <label>Explicacion</label>
-      <input type="text" class="css" id="explicacion" placeholder="Escriba aqui la explicacion de la pregunta">
-      <br>
-      <label>Imagen</label>
-      <input type="text" class="css" id="imagen" placeholder="Escriba aqui la ruta de la imagen">
-      <br>
-      <select id="tipo">
-        <option value="fol">FOL</option>
-        <option value="ingles">Ingles</option>
-      </select>
-      <br>
-      <button id="enviar" class="css2" name="enviar" value="enviar">Enviar</button>
+    <div id="formulario">
+      <?php
+      echo "<label>Pregunta</label>";
+      echo "<input type='text' class='css' id='pregunta' value='".$data[$i]['pregunta']."'>";
+      echo "<br>";
+      echo "<label>Respuesta A</label>";
+      echo "<input type='text' class='css' id='resA' value='".$data[$i]['a']."'>";
+      echo "<br>";
+      echo "<label>Respuesta B</label>";
+      echo "<input type='text' class='css' id='resB' value='".$data[$i]['b']."'>";
+      echo "<br>";
+      echo "<label>Respuesta C</label>";
+      echo "<input type='text' class='css' id='resC' value='".$data[$i]['c']."'>";
+      echo "<br>";
+      echo "<label>Respuesta D</label>";
+      echo "<input type='text' class='css' id='resD' value='".$data[$i]['d']."'>";
+      echo "<br>";
+      echo "<label>Seleccione cual es la respuesta correcta</label>";
+      echo "<br>";
+      echo "<input type='radio' name='rb' value='a' ".($data[$i]['respuesta'] == 'a' ? "checked" : '').">";
+      echo "<label for='A'>A</label>";
+      echo "<br>";
+      echo "<input type='radio' name='rb' value='b' ".($data[$i]['respuesta'] == 'b' ? "checked" : '').">";
+      echo "<label for='B'>B</label>";
+      echo "<br>";
+      echo "<input type='radio' name='rb' value='c' ".($data[$i]['respuesta'] == 'c' ? "checked" : '').">";
+      echo "<label for='C'>C</label>";
+      echo "<br>";
+      echo "<input type='radio' name='rb' value='d' ".($data[$i]['respuesta'] == 'd' ? "checked" : '').">";
+      echo "<label for='D'>D</label>";
+      echo "<br>";
+      echo "<label>Explicacion</label>";
+      echo "<input type='text' class='css' id='explicacion' value='".$data[$i]['explicacion']."'>";
+      echo "<br>";
+      echo "<label>Imagen</label>";
+      echo "<input type='text' class='css' id='' value='".$data[$i]['imagen']."'>";
+      echo "<br>";
+      echo "<select id=''>";
+      echo "<option value='fol''>FOL</option>";
+      echo "<option value='ingles'>Ingles</option>";
+      echo "</select>";
+      echo "<br>";
+      echo "<button id='enviar' class='css2' name='enviar' value='enviar'>Enviar</button>";
+      ?>
     </div>
 
   </div>
