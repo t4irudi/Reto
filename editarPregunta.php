@@ -1,4 +1,4 @@
-<?php ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL); ?>
+<?php $id = "";$id = $_GET['id'];ini_set('display_errors', 1); ini_set('display_startup_errors', 1); error_reporting(E_ALL); ?>
 <html lang="es" dir="ltr">
 
 <head>
@@ -15,8 +15,6 @@
     header("location: login.php");
   }
   include("datos.php");
-  $id = $_POST['id'];
-  var_dump($id);
 ?>
 <body>
 
