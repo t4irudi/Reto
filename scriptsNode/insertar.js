@@ -7,7 +7,7 @@ var preguntas = [{
         "d": "Todas son incorrectas",
         "respuesta": "c",
         "explicacion": "Es una señal de peligro",
-        "imagen": 1,
+        "imagen": "1.png",
         "categoria": "fol",
         "id_autor": 1
     },
@@ -19,7 +19,7 @@ var preguntas = [{
         "d": "3m",
         "respuesta": "a",
         "explicacion": "Los desniveles cuya altura de caída sea igual o superior a 2 deben ser protegidos",
-        "imagen": 2,
+        "imagen": "2.png",
         "categoria": "fol",
         "id_autor": 2
     },
@@ -31,7 +31,7 @@ var preguntas = [{
         "d": "Todas son incorrectas",
         "respuesta": "b",
         "explicacion": "la Higiene Industrial es la técnica que previene la aparición de enfermedades profesionales",
-        "imagen": 3,
+        "imagen": "3.png",
         "categoria": "fol",
         "id_autor": 2
     },
@@ -43,7 +43,7 @@ var preguntas = [{
         "d": "Todas son incorrectas",
         "respuesta": "c",
         "explicacion": "La salud laboral tiene la finalidad de mejorar las condiciones de trabajo para preservar la salud de los trabajadores",
-        "imagen": 4,
+        "imagen": "4.png",
         "categoria": "fol",
         "id_autor": 2
     },
@@ -55,7 +55,7 @@ var preguntas = [{
         "d": "Todas son correctas",
         "respuesta": "d",
         "explicacion": "Las tres primeras son obligaciones del trabajador en materia de prevención de riesgos laborales",
-        "imagen": 5,
+        "imagen": "5.png",
         "categoria": "fol",
         "id_autor": 3
     },
@@ -67,7 +67,7 @@ var preguntas = [{
         "d": "Todas son correctas",
         "respuesta": "a",
         "explicacion": "Los accidentes in itinere que son los que sufre el trabajador al ir al trabajo o al volver de este",
-        "imagen": 6,
+        "imagen": "6.png",
         "categoria": "fol",
         "id_autor": 1
     },
@@ -79,7 +79,7 @@ var preguntas = [{
         "d": "Auditiva",
         "respuesta": "d",
         "explicacion": "La auditiva no es una vía de entrada de los agentes biológicos",
-        "imagen": 7,
+        "imagen": "7.png",
         "categoria": "fol",
         "id_autor": 2
     },
@@ -91,7 +91,7 @@ var preguntas = [{
         "d": "Todas son correctas",
         "respuesta": "c",
         "explicacion": "La Ley de P.R.L obliga al empresario a facilitar formación teórica y práctica en materia de prevención de riesgos laborales, dentro de la jornada laboral y de forma gratuita para el trabajador",
-        "imagen": 8,
+        "imagen": "8.png",
         "categoria": "fol",
         "id_autor": 3
     },
@@ -103,7 +103,7 @@ var preguntas = [{
         "d": "Todas son incorrectas",
         "respuesta": "b",
         "explicacion": "Un plan de emergencia consiste en establecer una serie de actuaciones encaminadas a eliminar o disminuir los daños a personas y bienes derivados de la activación de un riesgo",
-        "imagen": 9,
+        "imagen": "9.png",
         "categoria": "fol",
         "id_autor": 1
     },
@@ -115,7 +115,7 @@ var preguntas = [{
         "d": "Ninguna es correcta",
         "respuesta": "a",
         "explicacion": "El artículo 40.2 de la Constitución Española encomienda a los poderes públicos, como uno de los principios rectores de la política social y económica, velar por la seguridad e higiene en el trabajo",
-        "imagen": 10,
+        "imagen": "10.png",
         "categoria": "fol",
         "id_autor": 2
     },
@@ -127,7 +127,7 @@ var preguntas = [{
         "d": "Todas son incorrectas.",
         "respuesta": "a",
         "explicacion": "De acuerdo con Texto Refundido de la Ley General de Seguridad Social lo define como «toda lesión corporal que el trabajador sufra con ocasión o a consecuencia del trabajo que ejecute por cuenta ajena».",
-        "imagen": 11,
+        "imagen": "11.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -139,7 +139,7 @@ var preguntas = [{
         "d": "Todas son correctas.",
         "respuesta": "a",
         "explicacion": "Lo que se persigue con esta ley es la prevención y sobre todo crear una cultura preventiva, además de establecer las obligaciones y responsabilidades de todas partes implicadas.",
-        "imagen": 12,
+        "imagen": "12.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -151,7 +151,7 @@ var preguntas = [{
         "d": "Todas son incorrectas.",
         "respuesta": "a",
         "explicacion": "Para la extinción de incendios se disponen de sistemas semifijos como las BIEs y sistemas fijos: como los rociadores situados en el techo.",
-        "imagen": 13,
+        "imagen": "13.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -163,7 +163,7 @@ var preguntas = [{
         "d": "Ninguna es correcta.",
         "respuesta": "a",
         "explicacion": "El trabajador debe cooperar con el empresario para garantizar que las condiciones sean seguras.",
-        "imagen": 14,
+        "imagen": "14.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -175,7 +175,7 @@ var preguntas = [{
         "d": "Todas son correctas.",
         "respuesta": "b",
         "explicacion": "La Ley de PRL obliga a evitar los riesgos, evaluar los riesgos que no se puedan evitar, combatir los riesgos en su origen.",
-        "imagen": 15,
+        "imagen": "15.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -187,7 +187,7 @@ var preguntas = [{
         "d": "Puedes ser denunciado por la policía.",
         "respuesta": "a",
         "explicacion": "Por ello es tan importante conocer las técnicas de primeros auxilios.",
-        "imagen": 16,
+        "imagen": "16.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -199,7 +199,7 @@ var preguntas = [{
         "d": "La primera persona que ve un accidente.",
         "respuesta": "b",
         "explicacion": "Esa es la definición de primer respondiente.",
-        "imagen": 17,
+        "imagen": "17.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -211,7 +211,7 @@ var preguntas = [{
         "d": "Proteger, Alertar y Salvar.",
         "respuesta": "a",
         "explicacion": "Ese es el orden que debemos seguir ante un accidente.",
-        "imagen": 18,
+        "imagen": "18.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -223,7 +223,7 @@ var preguntas = [{
         "d": "Se coloca al accidentado en cúbito supino, con las piernas a 30o y lo desnudas.",
         "respuesta": "c",
         "explicacion": "Esta seria la disposición de la posición de seguridad lateral.",
-        "imagen": 19,
+        "imagen": "19.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -235,7 +235,7 @@ var preguntas = [{
         "d": "El accidentado está en un estado de excitación.",
         "respuesta": "b",
         "explicacion": "Las demás opciones no se dan en estado de somnolencia.",
-        "imagen": 20,
+        "imagen": "20.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -247,7 +247,7 @@ var preguntas = [{
         "d": "Todas son incorrectas.",
         "respuesta": "b",
         "explicacion": "Así evitaremos que se atragante con el vómito.",
-        "imagen": 21,
+        "imagen": "21.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -259,7 +259,7 @@ var preguntas = [{
         "d": "Contusión de cuarto grado.",
         "respuesta": "b",
         "explicacion": "A partir del segundo grado es la que afecta a capas internas de la piel.",
-        "imagen": 22,
+        "imagen": "22.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -271,7 +271,7 @@ var preguntas = [{
         "d": "Una tribu urbana.",
         "respuesta": "a",
         "explicacion": "Es la definición de hemorragia.",
-        "imagen": 23,
+        "imagen": "23.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -283,7 +283,7 @@ var preguntas = [{
         "d": "Pérdida de visión.",
         "respuesta": "b",
         "explicacion": "La inflamación es el síntoma más común en los esguinces.",
-        "imagen": 24,
+        "imagen": "24.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -295,7 +295,7 @@ var preguntas = [{
         "d": "Es la inflamación de los músculos.",
         "respuesta": "a",
         "explicacion": "Esa es la definición de fractura",
-        "imagen": 25,
+        "imagen": "25.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -307,7 +307,7 @@ var preguntas = [{
         "d": "Ninguna es correcta.",
         "respuesta": "b",
         "explicacion": "En un medio no asistencial es lo mejor para la persona afectada.",
-        "imagen": 26,
+        "imagen": "26.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -319,7 +319,7 @@ var preguntas = [{
         "d": "Posición anti-Trendelemburg.",
         "respuesta": "b",
         "explicacion": "Esta posición facilitar la recuperación en caso de hipotensión.",
-        "imagen": 27,
+        "imagen": "27.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -331,7 +331,7 @@ var preguntas = [{
         "d": "Intentar sacar el objeto con unas pinzas.",
         "respuesta": "a",
         "explicacion": "Es lo más recomendado frente a esta situación.",
-        "imagen": 28,
+        "imagen": "28.png",
         "categoria": "fol",
         "id_autor": 4
     },
@@ -343,7 +343,7 @@ var preguntas = [{
     "d": "Soplar en el oído.",
     "respuesta": "b",
     "explicacion": "Debemos dejar la salida de sangre libre.",
-    "imagen": 29,
+    "imagen": "29.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -355,7 +355,7 @@ var preguntas = [{
     "d": "Se agrandan los ojos.",
     "respuesta": "a",
     "explicacion": "Las demás opciones no ocurren cuando la temperatura ambiental es baja.",
-    "imagen": 30,
+    "imagen": "30.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -367,7 +367,7 @@ var preguntas = [{
     "d": "Todas son incorrectas.",
     "respuesta": "c",
     "explicacion": "Tanto una como otra son peligros muy comunes en los quemados.",
-    "imagen": 31,
+    "imagen": "31.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -379,7 +379,7 @@ var preguntas = [{
     "d": "24º",
     "respuesta": "a",
     "explicacion": "28º suele ser el umbral a partir del que se produce la parada.",
-    "imagen": 32,
+    "imagen": "32.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -391,7 +391,7 @@ var preguntas = [{
     "d": "Congelaciones de cuarto grado.",
     "respuesta": "c",
     "explicacion": "La necrosis siempre es considerada como congelación de tercer grado.",
-    "imagen": 33,
+    "imagen": "33.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -403,7 +403,7 @@ var preguntas = [{
     "d": "Es la infección por tétanos.",
     "respuesta": "b",
     "explicacion": "Es un término no muy conocido pero que todos sabemos lo que es.",
-    "imagen": 34,
+    "imagen": "34.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -415,7 +415,7 @@ var preguntas = [{
     "d": "Todas son incorrectas.",
     "respuesta": "b",
     "explicacion": "Es lo primero que se debe hacer para evitar más accidentes.",
-    "imagen": 35,
+    "imagen": "35.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -427,7 +427,7 @@ var preguntas = [{
     "d": "Todas son incorrectas.",
     "respuesta": "c",
     "explicacion": "Provocar el vomito puede generar aún más daños",
-    "imagen": 36,
+    "imagen": "36.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -439,7 +439,7 @@ var preguntas = [{
     "d": "Intoxicaciones por comida.",
     "respuesta": "a",
     "explicacion": "Los gases solo pueden entrar por vía respiratoria.",
-    "imagen": 37,
+    "imagen": "37.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -451,7 +451,7 @@ var preguntas = [{
     "d": "No proporcionar ayuda.",
     "respuesta": "b",
     "explicacion": "Lo mas seguro es pedir ayuda.",
-    "imagen": 38,
+    "imagen": "38.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -463,7 +463,7 @@ var preguntas = [{
     "d": "Todas son incorrectas.",
     "respuesta": "c",
     "explicacion": "Tosiendo la persona puede expulsar lo que obstruya la vía aérea.",
-    "imagen": 39,
+    "imagen": "39.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -475,7 +475,7 @@ var preguntas = [{
     "d": "Aplicar frío en la herida.",
     "respuesta": "c",
     "explicacion": "Las otras opciones pueden acarrear graves consecuencias.",
-    "imagen": 40,
+    "imagen": "40.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -487,7 +487,7 @@ var preguntas = [{
     "d": "Buscar al insecto e interrogarlo",
     "respuesta": "b",
     "explicacion": "Únicamente debemos lavar con agua la zona afectada.",
-    "imagen": 41,
+    "imagen": "41.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -499,7 +499,7 @@ var preguntas = [{
     "d": "Fase de expulsión.",
     "respuesta": "b",
     "explicacion": "La fase de postparto no existe como tal.",
-    "imagen": 42,
+    "imagen": "42.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -511,7 +511,7 @@ var preguntas = [{
     "d": "En la fase de reconocimiento.",
     "respuesta": "b",
     "explicacion": "En las otras fases aunque con dificultad, la mujer puede moverse.",
-    "imagen": 43,
+    "imagen": "43.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -523,7 +523,7 @@ var preguntas = [{
     "d": "Estamos cansados.",
     "respuesta": "b",
     "explicacion": "No estamos cualificados para confirmar la muerte, y si rompemos una costilla o estamos cansados debemos continuar.",
-    "imagen": 44,
+    "imagen": "44.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -535,7 +535,7 @@ var preguntas = [{
     "d": "Tumbado boca abajo.",
     "respuesta": "b",
     "explicacion": "Debemos procurar en la medida de lo posible seguir esas directrices.",
-    "imagen": 45,
+    "imagen": "45.png",
     "categoria": "fol",
     "id_autor": 4
 },
@@ -550,7 +550,7 @@ var preguntas = [{
         "d": "Red guy",
         "respuesta": "a",
         "explicacion": "",
-        "imagen": 1,
+        "imagen": "1.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -562,7 +562,7 @@ var preguntas = [{
         "d": "Pac-Man",
         "respuesta": "a",
         "explicacion": "",
-        "imagen": 2,
+        "imagen": "2.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -574,7 +574,7 @@ var preguntas = [{
         "d": "A rabbit",
         "respuesta": "d",
         "explicacion": "",
-        "imagen": 3,
+        "imagen": "3.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -586,7 +586,7 @@ var preguntas = [{
         "d": "Yoda",
         "respuesta": "b",
         "explicacion": "",
-        "imagen": 4,
+        "imagen": "4.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -598,7 +598,7 @@ var preguntas = [{
         "d": "A baboon",
         "respuesta": "b",
         "explicacion": "",
-        "imagen": 5,
+        "imagen": "5.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -610,7 +610,7 @@ var preguntas = [{
         "d": "Dead Space",
         "respuesta": "c",
         "explicacion": "",
-        "imagen": 6,
+        "imagen": "6.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -622,7 +622,7 @@ var preguntas = [{
         "d": "Monster Hunter",
         "respuesta": "d",
         "explicacion": "",
-        "imagen": 7,
+        "imagen": "7.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -634,7 +634,7 @@ var preguntas = [{
         "d": "Plasma Snake",
         "respuesta": "c",
         "explicacion": "",
-        "imagen": 8,
+        "imagen": "8.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -646,7 +646,7 @@ var preguntas = [{
         "d": "Nico Belic",
         "respuesta": "d",
         "explicacion": "",
-        "imagen": 9,
+        "imagen": "9.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -658,7 +658,7 @@ var preguntas = [{
         "d": "Assassin’s Creed: Odyssey",
         "respuesta": "a",
         "explicacion": "",
-        "imagen": 10,
+        "imagen": "10.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -670,7 +670,7 @@ var preguntas = [{
         "d": "Daisy",
         "respuesta": "b",
         "explicacion": "",
-        "imagen": 11,
+        "imagen": "11.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -682,7 +682,7 @@ var preguntas = [{
         "d": "Sunset Overdrive",
         "respuesta": "c",
         "explicacion": "",
-        "imagen": 12,
+        "imagen": "12.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -694,7 +694,7 @@ var preguntas = [{
         "d": "Fable",
         "respuesta": "a",
         "explicacion": "",
-        "imagen": 13,
+        "imagen": "13.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -706,7 +706,7 @@ var preguntas = [{
         "d": "Simlish",
         "respuesta": "d",
         "explicacion": "imagenes/ingles/14.png",
-        "imagen": 14,
+        "imagen": "14.png",
         "categoria": "ingles",
         "id_autor": 4
     },
@@ -718,7 +718,7 @@ var preguntas = [{
         "d": "Going Ghost",
         "respuesta": "b",
         "explicacion": "",
-        "imagen": 15,
+        "imagen": "15.png",
         "categoria": "ingles",
         "id_autor": 4
     }

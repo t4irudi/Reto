@@ -126,14 +126,15 @@ exports.deleteOne = function(req, res) {
 };
 
 exports.getOne = function(req, res) {
-    Pregunta.getOne(function(err, preguntas) {
+    var id = req.params.id;
+    Pregunta.getOne(function(err, pregunta) {
         if (err) {
             res.json({
                 status: ":(",
                 message: err
             });
         } else {
-            res.json(preguntas);
+            res.json(pregunta);
         }
     }, id);
 };
