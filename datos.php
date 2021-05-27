@@ -4,7 +4,7 @@ function conectarBBDD()
 {
     //Abrir una conexión
 
-    $mysqli = new mysqli("192.168.6.169:3306", "almi", "Almi123", "t4_irudi_buena");
+    $mysqli = new mysqli("192.168.6.169", "almi", "Almi123", "t4_irudi_buena");
     if ($mysqli->connect_errno) {
         echo "Fallo en la conexión: " . $mysqli->connect_errno;
     }
@@ -12,18 +12,18 @@ function conectarBBDD()
     return $mysqli;
 }
 
-    function insertarUsuario($user, $password, $nombre, $apellido)
+    function insertarUsuario($user, $password, $nombre, $apellidos)
     {
       $mysqli = conectarBBDD();
 
-      $sql = "INSERT INTO users( user, pwd, nombre, apellido) VALUES ( ?, ?, ?, ? )";
+      $sql = "INSERT INTO users( user, pwd, nombre, apellidos) VALUES ( ?, ?, ?, ? )";
       $sentencia = $mysqli->prepare($sql);
       if(!$sentencia)
       {
         echo "Fallo al preparar la insert";
       }
 
-      $bind = $sentencia->bind_param("ssss", $user, $password, $nombre, $apellido);
+      $bind = $sentencia->bind_param("ssss", $user, $password, $nombre, $apellidos);
       if(!$bind)
       {
         echo "Error al asociar parámetros";
@@ -105,6 +105,28 @@ function conectarBBDD()
       }
       $resultado = $sentencia->execute();
       var_dump($resultado);
+      $mysqli->close();
+      return $resultado;
+    }
+
+    function updateUsuario($password, $id)
+    {
+      $mysqli = conectarBBDD();
+
+      $sql = "UPDATE users SET pwd=? WHERE id_user=?";
+      $sentencia = $mysqli->prepare($sql);
+      if(!$sentencia)
+      {
+        echo "Fallo al preparar la insert";
+      }
+
+      $bind = $sentencia->bind_param("si", $password, $id);
+      if(!$bind)
+      {
+        echo "Error al asociar parámetros";
+      }
+      $resultado = $sentencia->execute();
+
       $mysqli->close();
       return $resultado;
     }
