@@ -7,9 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-
-
-
+  <script src="js/jquery-3.6.0.min.js"></script>
 </head>
 <?php
   session_start();
@@ -17,7 +15,8 @@
     header("location: login.php");
   }
   include("datos.php");
-  $id = $_POST['_id'];
+  $id = $_POST['id'];
+  var_dump($id);
 ?>
 <body>
 
@@ -44,56 +43,72 @@
 		        </ul>
 		    </div>
 	</div>
-
   <?php
+  $pregunta = "";
+  $resA = "";
+  $resB = "";
+  $resC = "";
+  $resD = "";
+  $respuesta = "";
+  $explicacion = "";
+  $imagen = "";
+  if ($id != null) {
 		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, 'http://192.168.6.169:8080/api/preguntas/' + $id);
+    $url = ("http://192.168.6.169:8080/api/preguntas/".$id);
+		curl_setopt($ch, CURLOPT_URL, $url);
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 		curl_setopt($ch, CURLOPT_HEADER, 0);
 		$data = curl_exec($ch);
 		curl_close($ch);
 		$data = json_decode($data, true);
-
-		$count = count($data);
+    $pregunta = $data[0]['pregunta'];
+    $resA = $data[0]['a'];
+    $resB = $data[0]['b'];
+    $resC = $data[0]['c'];
+    $resD = $data[0]['d'];
+    $respuesta = $data[0]['respuesta'];
+    $explicacion = $data[0]['explicacion'];
+    $imagen = $data[0]['imagen'];
+  }
 	?>
 
 	<div id="cuerpo">
     <div id="formulario">
       <?php
       echo "<label>Pregunta</label>";
-      echo "<input type='text' class='css' id='pregunta' value='".$data[$i]['pregunta']."'>";
+      echo "<input type='text' class='css' id='pregunta' value='".$pregunta."'>";
       echo "<br>";
       echo "<label>Respuesta A</label>";
-      echo "<input type='text' class='css' id='resA' value='".$data[$i]['a']."'>";
+      echo "<input type='text' class='css' id='resA' value='".$resA."'>";
       echo "<br>";
       echo "<label>Respuesta B</label>";
-      echo "<input type='text' class='css' id='resB' value='".$data[$i]['b']."'>";
+      echo "<input type='text' class='css' id='resB' value='".$resB."'>";
       echo "<br>";
       echo "<label>Respuesta C</label>";
-      echo "<input type='text' class='css' id='resC' value='".$data[$i]['c']."'>";
+      echo "<input type='text' class='css' id='resC' value='".$resC."'>";
       echo "<br>";
       echo "<label>Respuesta D</label>";
-      echo "<input type='text' class='css' id='resD' value='".$data[$i]['d']."'>";
+      echo "<input type='text' class='css' id='resD' value='".$resD."'>";
       echo "<br>";
       echo "<label>Seleccione cual es la respuesta correcta</label>";
       echo "<br>";
-      echo "<input type='radio' name='rb' value='a' ".($data[$i]['respuesta'] == 'a' ? "checked" : '').">";
+      echo "<input type='radio' name='rb' value='a' ".($respuesta == 'a' ? "checked" : '').">";
       echo "<label for='A'>A</label>";
       echo "<br>";
-      echo "<input type='radio' name='rb' value='b' ".($data[$i]['respuesta'] == 'b' ? "checked" : '').">";
+      echo "<input type='radio' name='rb' value='b' ".($respuesta == 'b' ? "checked" : '').">";
       echo "<label for='B'>B</label>";
       echo "<br>";
-      echo "<input type='radio' name='rb' value='c' ".($data[$i]['respuesta'] == 'c' ? "checked" : '').">";
+      echo "<input type='radio' name='rb' value='c' ".($respuesta == 'c' ? "checked" : '').">";
       echo "<label for='C'>C</label>";
       echo "<br>";
-      echo "<input type='radio' name='rb' value='d' ".($data[$i]['respuesta'] == 'd' ? "checked" : '').">";
+      echo "<input type='radio' name='rb' value='d' ".($respuesta == 'd' ? "checked" : '').">";
       echo "<label for='D'>D</label>";
       echo "<br>";
       echo "<label>Explicacion</label>";
-      echo "<input type='text' class='css' id='explicacion' value='".$data[$i]['explicacion']."'>";
+      echo "<input type='text' class='css' id='explicacion' value='".$explicacion."'>";
       echo "<br>";
       echo "<label>Imagen</label>";
-      echo "<input type='text' class='css' id='' value='".$data[$i]['imagen']."'>";
+      echo "<input type='text' class='css' id='' value='".$imagen."'>";
       echo "<br>";
       echo "<select id=''>";
       echo "<option value='fol''>FOL</option>";

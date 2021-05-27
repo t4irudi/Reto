@@ -101,8 +101,9 @@
 							if (isset($_SESSION["user"]) == false) {
 								
 							} else {
-							  echo "<td class='editar'><a href='editarPregunta.php?id=".$data[$i]['_id']."'><img src='images/editar.png' class='img'/></td>";
-							  echo "<td><input type='image' class='borrar' value='".$data[$i]['_id']."' src='images/borrar.png' class='img'/></td>";
+								echo "<td>".$data[$i]['_id']."</td>";
+								echo "<td class='editar'><a href='editarPregunta.php?id=".$data[$i]['_id']."'><img src='images/editar.png' class='img'/></td>";
+								echo "<td><input type='image' class='borrar' value='".$data[$i]['_id']."' src='images/borrar.png' class='img'/></td>";
 							}
 						echo "</tr>";
 					}

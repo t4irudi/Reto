@@ -4,7 +4,7 @@ function conectarBBDD()
 {
     //Abrir una conexión
 
-    $mysqli = new mysqli("192.168.6.169:3306", "almi", "Almi123", "t4_irudi_buena");
+    $mysqli = new mysqli("192.168.6.169", "almi", "Almi123", "t4_irudi_buena");
     if ($mysqli->connect_errno) {
         echo "Fallo en la conexión: " . $mysqli->connect_errno;
     }
