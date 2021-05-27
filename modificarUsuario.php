@@ -89,21 +89,15 @@
 
 			}
 		</script>
-		<div id="userInfoPanel">
-	      <label>Antigua contraseña: </label>
-	      <input type="text" class="css" placeholder="Escriba su antigua contraseña" >
-	      <br>
-				<label for="password">Contraseña</label>
+		<form id="userInfoPanel" action="updatePass.php" method="post">
+				<label for="password">Su nueva contraseña</label>
 				<input class="css" type="password" id="password" name="password" placeholder="Escriba su contraseña" /><br>
 				<br>
 				<label for="repassword">Repita su contraseña</label>
 				<input class="css" type="password" id="repassword" name="repassword" placeholder="Repita su contraseña" /><br>
 				<br>
 				<input class="css2" id="enviar" type="submit" value="Guardar" />
-
-
-
-			</div>
+			</form>
 
 		<button class="button1"	>Modificar contraseña</button>
 		<button class="button2" style="display : none">Atras</button>
@@ -132,9 +126,32 @@
 <tr>
 	<td></td>
 </tr>
-	<div id="pie">
+<div class="pie">
+	<div id="primera" class="column">
+		<br>
+		<p id="motivation">We are an award-winning creative agency, dedicated to the best result in web design, promotion, business consulting, and marketing.</p>
+		<br>
 		<p id="Copyright">Copyright 1999-2021 by t4Irudi Data. All Rights Reserved. T4 is powered by la planta santa</p>
 	</div>
+	<div id="segunda" class="column">
+		<h2>Contactos</h2>
+		<br>
+		<h3>Telefono:</h3>
+		<p>-693958928</p>
+		<h3>Redes Sociales:</h3>
+		<p>Instagram: <a href="https://www.instagram.com/" target="_blank">@t4_irudi</a></p>
+		<p>Facebook: <a href="https://www.facebook.com/" target="_blank">t4Irudi</a></p>
+	</div>
+	<div class="column">
+		<h2>Jugadores</h2>
+		<br>
+		<a href="registro.php"><h3>Registrate ahora</h3></a>
+		<br>
+		<p>Ya tienes una cuenta?</p>
+		<br>
+		<a href="login.php"><h3>Inicia Sesion</h3></a>
+	</div>
+</div>
 
 </body>
 

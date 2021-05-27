@@ -240,20 +240,6 @@ left: 84.7%;
     margin-top: 138px;
 }
 
-div#pie
-{
-  position: relative;
-  height: 10.5%;
-  background-color: black;
-}
-
-div#pie p#Copyright
-{
-  position: relative;
-  padding: 10px;
-  color: white;
-}
-
 table.blueTable
 {
   width: 88%;
@@ -386,7 +372,7 @@ h2#tituloUsername
     height: 40px;
     width: 40px;
 }
-div#userInfoPanel
+form#userInfoPanel
 {
   margin-top: 120px;
   margin-bottom: 120px;
@@ -400,7 +386,89 @@ div#userInfoPanel
   display: none;
 }
 
-div#userInfoPanel h2
+form#userInfoPanel h2
 {
   text-align: center;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  height: 20%;
+  background-color: black;
+
+}
+
+/* Clear floats after the columns */
+.pie:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.pie div.column p
+{
+  color:grey;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+
+}
+.pie div#primera.column p
+{
+  margin: auto;
+  vertical-align: middle;
+  margin-top: auto;
+}
+.pie div#segunda.column
+{
+  background-color: #545454;
+}
+
+.pie div#segunda.column p
+{
+  color: black;
+}
+
+.pie div.column p#motivation
+{
+  width: 80%;
+  text-align: center;
+  vertical-align: middle;
+}
+.pie div.column p#Copyright
+{
+  width: 85%;
+  color: white;
+  text-align: center;
+}
+
+.pie div.column h2
+{
+  color:white;
+  text-decoration: underline;
+  margin-left: 20px;
+}
+
+.pie div.column h3
+{
+  color:white;
+  text-align: center;
+
+}
+
+.pie div.column a
+{
+  text-decoration: none;
+  color: black;
+  animation-duration: 3s;
+}
+
+.pie div.column a:hover
+{
+  text-decoration: none;
+  color: blue;
+  font-size: 17px;
+
 }

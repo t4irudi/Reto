@@ -12,23 +12,9 @@ $(document).ready(function () {
       } else {
           $("#repassword").css("background-color", "green");
 
+
       }
       console.log("bien");
-
-
-
-      $.ajax({
-        data: pass1,
-        url: "http://192.168.6.165/Reto/updatePass.php",
-        type: "post",
-        success: function(res) {
-          console.log("not success");
-            },
-        error: function(err) {
-          console.log('err');
-          console.log(err);
-        }
-      });
 
   });
 

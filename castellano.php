@@ -99,7 +99,7 @@
 							echo "<td class='td'>". $data[$i]['c'] . "</td>";
 							echo "<td class='td'>". $data[$i]['d'] . "</td>";
 							if (isset($_SESSION["user"]) == false) {
-								
+
 							} else {
 								echo "<td>".$data[$i]['_id']."</td>";
 								echo "<td class='editar'><a href='editarPregunta.php?id=".$data[$i]['_id']."'><img src='images/editar.png' class='img'/></td>";
@@ -108,13 +108,13 @@
 						echo "</tr>";
 					}
 				?>
-				
+
 				</tbody>
 			</table>
 			<script>
 					$('.borrar').click(function (event) {
     					if (confirm("¿Desea eliminar esta tabla?")) {
-      						var id = $(this).val();					
+      						var id = $(this).val();
       						$.ajax({
         						url: "http://192.168.6.169:8080/api/preguntas/" + id,
         						type: "delete",
@@ -124,7 +124,7 @@
         						error: function(err) {
           							console.log(err);
         						}
-      						});      						
+      						});
     					} else {
         					event.preventDefault();
     					}
@@ -164,8 +164,19 @@
 			</script>
 	</div>
 
-	<div id="pie">
-		<p id="Copyright">Copyright 1999-2021 by t4Irudi Data. All Rights Reserved. T4 is powered by la planta santa</p>
+	<div class="pie">
+		<div class="column">
+			<h2>Column 1</h2>
+			<p>Some text..</p>
+		</div>
+		<div class="column">
+			<h2>Column 2</h2>
+			<p>Some text..</p>
+		</div>
+		<div class="column">
+			<h2>Column 3</h2>
+			<p>Some text..</p>
+		</div>
 	</div>
 
 </body>

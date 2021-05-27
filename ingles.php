@@ -84,23 +84,23 @@
 							echo "<td class='td'>". $data[$i]['c'] . "</td>";
 							echo "<td class='td'>". $data[$i]['d'] . "</td>";
 							if (isset($_SESSION["user"]) == false) {
-								
+
 							} else {
 							  echo "<td class='editar'><a href='editarPregunta.php?id=".$data[$i]['_id']."'><img src='images/editar.png' class='img'/></td>";
 							  echo "<td><input type='image' class='borrar' value='".$data[$i]['_id']."' src='images/borrar.png' class='img'/></td>";
 							}
 						echo "</tr>";
 					}
-					
+
 				?>
-				
+
 				</tbody>
 			</table>
 			<script>
 
 					$('.borrar').click(function (event) {
     					if (confirm("¿Desea eliminar esta tabla?")) {
-      						var id = $(this).val();				
+      						var id = $(this).val();
       						$.ajax({
         						url: "http://192.168.6.169:8080/api/preguntas/" + id,
         						type: "delete",
@@ -110,7 +110,7 @@
         						error: function(err) {
           							console.log(err);
         						}
-      						});      						
+      						});
     					} else {
         					event.preventDefault();
     					}
